@@ -186,9 +186,10 @@
     "spotify_url": null
   },
   "80826": {
-    "discogs_id": 17973094,
-    "discogs_url": "https://www.discogs.com/release/17973094",
-    "release_date": "2021-03-00",
+    "discogs_id": 607107,
+    "discogs_url": "https://www.discogs.com/release/607107",
+    "release_date": "2006-01-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -400,9 +401,10 @@
     "spotify_url": "https://open.spotify.com/album/0ygEAg4v9SHdsrAwGpooHy"
   },
   "69719": {
-    "discogs_id": 342066,
-    "discogs_url": "https://www.discogs.com/release/342066",
-    "release_date": "2004-10-00",
+    "discogs_id": null,
+    "discogs_url": null,
+    "release_date": null,
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
