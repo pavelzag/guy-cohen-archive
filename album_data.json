@@ -7,13 +7,18 @@
     "spotify_url": null
   },
   "54023": {
+    "discogs_id": 391825,
+    "discogs_url": "https://www.discogs.com/release/391825",
+    "release_date": "2005-01-16",
+    "asin": null,
     "spotify_id": "5FgCduSEhz7lJ2fRB7eEtk",
     "spotify_url": "https://open.spotify.com/album/5FgCduSEhz7lJ2fRB7eEtk"
   },
   "102304": {
-    "discogs_id": 118895,
-    "discogs_url": "https://www.discogs.com/release/118895",
-    "release_date": "1992-10-01",
+    "discogs_id": 889452,
+    "discogs_url": "https://www.discogs.com/release/889452",
+    "release_date": "2006-11-10",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -25,9 +30,10 @@
     "spotify_url": null
   },
   "54633": {
-    "discogs_id": 7998242,
-    "discogs_url": "https://www.discogs.com/release/7998242",
-    "release_date": "2008",
+    "discogs_id": 389678,
+    "discogs_url": "https://www.discogs.com/release/389678",
+    "release_date": "2005-01-12",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -57,6 +63,10 @@
     "spotify_url": "https://open.spotify.com/album/77jRvOKUXCnRb2dev4Yz5z"
   },
   "125963": {
+    "discogs_id": 1118394,
+    "discogs_url": "https://www.discogs.com/release/1118394",
+    "release_date": "2007-11-05",
+    "asin": null,
     "spotify_id": "5uE7OpuM8N1oo5IllhELGe",
     "spotify_url": "https://open.spotify.com/album/5uE7OpuM8N1oo5IllhELGe"
   },
@@ -75,6 +85,10 @@
     "spotify_url": "https://open.spotify.com/album/4dy6lOQnI3kHpXqAO38cLB"
   },
   "98319": {
+    "discogs_id": 783619,
+    "discogs_url": "https://www.discogs.com/release/783619",
+    "release_date": "2006-09-00",
+    "asin": null,
     "spotify_id": "5nUGg8uZO2s5jhlpoHWlfL",
     "spotify_url": "https://open.spotify.com/album/5nUGg8uZO2s5jhlpoHWlfL"
   },
@@ -100,6 +114,10 @@
     "spotify_url": "https://open.spotify.com/album/2ZCTs3xFT8WlDjRha8etdi"
   },
   "47747": {
+    "discogs_id": 316148,
+    "discogs_url": "https://www.discogs.com/release/316148",
+    "release_date": "2004-08-00",
+    "asin": null,
     "spotify_id": "6GLrqWhGcQb25qWUuB2EVa",
     "spotify_url": "https://open.spotify.com/album/6GLrqWhGcQb25qWUuB2EVa"
   },
@@ -125,9 +143,10 @@
     "spotify_url": null
   },
   "75216": {
-    "discogs_id": 4276,
-    "discogs_url": "https://www.discogs.com/release/4276",
-    "release_date": "1993",
+    "discogs_id": 563493,
+    "discogs_url": "https://www.discogs.com/release/563493",
+    "release_date": "2005-11-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -202,9 +221,10 @@
     "spotify_url": "https://open.spotify.com/album/42riOORQp3kE8bcBwj9WF3"
   },
   "73228": {
-    "discogs_id": 19323,
-    "discogs_url": "https://www.discogs.com/release/19323",
-    "release_date": "1993-08-00",
+    "discogs_id": 564112,
+    "discogs_url": "https://www.discogs.com/release/564112",
+    "release_date": "2005-10-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -223,9 +243,10 @@
     "spotify_url": null
   },
   "98562": {
-    "discogs_id": 9548284,
-    "discogs_url": "https://www.discogs.com/release/9548284",
-    "release_date": "2017-01-01",
+    "discogs_id": 807577,
+    "discogs_url": "https://www.discogs.com/release/807577",
+    "release_date": "2006-10-09",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -335,9 +356,10 @@
     "spotify_url": "https://open.spotify.com/album/5z8qyFOTGFiwIQGWsyf4j4"
   },
   "129677": {
-    "discogs_id": 2792716,
-    "discogs_url": "https://www.discogs.com/release/2792716",
-    "release_date": "1996",
+    "discogs_id": 1224484,
+    "discogs_url": "https://www.discogs.com/release/1224484",
+    "release_date": "2008-02-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -363,6 +385,10 @@
     "spotify_url": "https://open.spotify.com/album/15RhL3vWbEZ5TBzseCPGnA"
   },
   "62163": {
+    "discogs_id": 448510,
+    "discogs_url": "https://www.discogs.com/release/448510",
+    "release_date": "2005-04-00",
+    "asin": null,
     "spotify_id": "3zhtig08U2v7UIaxUV4DAI",
     "spotify_url": "https://open.spotify.com/album/3zhtig08U2v7UIaxUV4DAI"
   },
@@ -465,17 +491,26 @@
     "spotify_url": "https://open.spotify.com/album/3EuwfjrNiB4R8mVgROM2Lf"
   },
   "94495": {
+    "discogs_id": 1877843,
+    "discogs_url": "https://www.discogs.com/release/1877843",
+    "release_date": "2006-07-00",
+    "asin": null,
     "spotify_id": "5qvdEgMJBk64y4C9RYTCWh",
     "spotify_url": "https://open.spotify.com/album/5qvdEgMJBk64y4C9RYTCWh"
   },
   "60790": {
+    "discogs_id": 446208,
+    "discogs_url": "https://www.discogs.com/release/446208",
+    "release_date": "2005-04-00",
+    "asin": null,
     "spotify_id": "5f7qUlgexO2wgy83GY9CBj",
     "spotify_url": "https://open.spotify.com/album/5f7qUlgexO2wgy83GY9CBj"
   },
   "105528": {
-    "discogs_id": 24218387,
-    "discogs_url": "https://www.discogs.com/release/24218387",
-    "release_date": "2022-08-00",
+    "discogs_id": 899945,
+    "discogs_url": "https://www.discogs.com/release/899945",
+    "release_date": "2007-02-00",
+    "asin": "B000N8UWN4",
     "spotify_id": null,
     "spotify_url": null
   },
@@ -487,16 +522,18 @@
     "spotify_url": null
   },
   "103146": {
-    "discogs_id": 222018,
-    "discogs_url": "https://www.discogs.com/release/222018",
-    "release_date": "1987-06-00",
+    "discogs_id": 888441,
+    "discogs_url": "https://www.discogs.com/release/888441",
+    "release_date": "2007-01-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
   "91751": {
-    "discogs_id": 757443,
-    "discogs_url": "https://www.discogs.com/release/757443",
-    "release_date": "1996",
+    "discogs_id": 733109,
+    "discogs_url": "https://www.discogs.com/release/733109",
+    "release_date": "2006-06-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
@@ -515,16 +552,18 @@
     "spotify_url": "https://open.spotify.com/album/4PIVEOyBjrMd3Efe461rbA"
   },
   "64530": {
-    "discogs_id": 49682,
-    "discogs_url": "https://www.discogs.com/release/49682",
-    "release_date": "2002-08-31",
+    "discogs_id": 477481,
+    "discogs_url": "https://www.discogs.com/release/477481",
+    "release_date": "2005-06-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
   "111862": {
-    "discogs_id": 2706542,
-    "discogs_url": "https://www.discogs.com/release/2706542",
-    "release_date": "2009-08-25",
+    "discogs_id": 1006302,
+    "discogs_url": "https://www.discogs.com/release/1006302",
+    "release_date": "2007-06-00",
+    "asin": null,
     "spotify_id": null,
     "spotify_url": null
   },
