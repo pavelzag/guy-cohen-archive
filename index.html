@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Guy Cohen Archive — A Digital Archaeological Exhibition</title>
+  <meta name="description" content="Three surviving fragments from forum.isratrance.com — the complete known writings of guy cohen, Senior Member, recovered and preserved as digital artifacts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #060403;
+      --stone:     #15100d;
+      --stone-mid: #1e1712;
+      --stone-hi:  #2c211a;
+      --gold:      #c9a84c;
+      --gold-dim:  #8a6e2f;
+      --gold-pale: #e8d090;
+      --parchment: #d4c4a0;
+      --dust:      #9a8870;
+      --shadow:    rgba(0,0,0,0.8);
+      --glow:      rgba(201,168,76,0.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--parchment);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.75;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Noise overlay */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.45;
+    }
+
+    /* Vignette */
+    body::after {
+      content: '';
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.72) 100%);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; z-index: 1;
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 4rem 2rem;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.06) 0%, transparent 70%),
+        linear-gradient(180deg, #060403 0%, #0d0906 50%, #060403 100%);
+    }
+
+    .hero-rule {
+      width: 220px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 1.5rem auto;
+    }
+
+    .hero-label {
+      font-family: 'Cinzel', serif;
+      font-size: 0.68rem; letter-spacing: 0.35em;
+      color: var(--gold-dim); text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .hero-title {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: clamp(2.2rem, 6vw, 4.8rem);
+      font-weight: 700;
+      color: var(--gold-pale);
+      letter-spacing: 0.06em;
+      line-height: 1.2;
+      text-shadow:
+        0 0 40px rgba(201,168,76,0.35),
+        0 2px 8px rgba(0,0,0,0.9);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(0.72rem, 1.8vw, 0.95rem);
+      letter-spacing: 0.28em;
+      color: var(--gold-dim);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    .hero-desc {
+      max-width: 580px;
+      font-size: 1.1rem; font-weight: 300; font-style: italic;
+      color: var(--dust); line-height: 1.9;
+    }
+
+    .hero-scroll {
+      position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.3em;
+      color: var(--gold-dim); text-transform: uppercase;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    .hero-scroll::after { content: '↓'; font-size: 1.2rem; color: var(--gold-dim); }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50%       { opacity: 1; }
+    }
+
+    /* ── DIVIDER ── */
+    .section-divider {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: center;
+      gap: 1.5rem; padding: 3rem 2rem;
+    }
+    .section-divider span {
+      font-family: 'Cinzel', serif; font-size: 0.65rem; letter-spacing: 0.35em;
+      color: var(--gold-dim); text-transform: uppercase; white-space: nowrap;
+    }
+    .section-divider::before,
+    .section-divider::after {
+      content: ''; flex: 1; max-width: 280px; height: 1px;
+    }
+    .section-divider::before { background: linear-gradient(90deg, transparent, var(--gold-dim)); }
+    .section-divider::after  { background: linear-gradient(90deg, var(--gold-dim), transparent); }
+
+    /* ── EXHIBITION ── */
+    .exhibition {
+      position: relative; z-index: 1;
+      max-width: 960px; margin: 0 auto; padding: 0 1.5rem 8rem;
+      display: flex; flex-direction: column; gap: 8rem;
+    }
+
+    /* ── ARTIFACT ── */
+    .artifact { position: relative; }
+
+    .artifact-case {
+      position: relative;
+      background: linear-gradient(145deg, var(--stone-mid) 0%, var(--stone) 100%);
+      border: 1px solid rgba(201,168,76,0.2);
+      box-shadow:
+        0 0 0 1px rgba(201,168,76,0.05),
+        0 0 30px rgba(0,0,0,0.6),
+        0 0 80px rgba(201,168,76,0.04),
+        inset 0 1px 0 rgba(201,168,76,0.12),
+        inset 0 -1px 0 rgba(0,0,0,0.5);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .artifact-case::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold-dim) 30%, var(--gold) 50%, var(--gold-dim) 70%, transparent 100%);
+    }
+    .artifact-case::after {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.015' numOctaves='3' seed='8' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+      opacity: 0.6; mix-blend-mode: overlay;
+    }
+
+    .artifact-inner { padding: 3rem 3.5rem 2.5rem; position: relative; }
+
+    .artifact-number {
+      position: absolute; top: -1.6rem; left: 3rem;
+      font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.4em;
+      color: var(--gold-dim); text-transform: uppercase;
+      background: var(--bg); padding: 0.3rem 1rem;
+      border: 1px solid rgba(201,168,76,0.15);
+    }
+
+    /* ── ALBUM COVER ── */
+    .artifact-cover {
+      display: flex; flex-direction: column; align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .album-cover-frame {
+      position: relative;
+      display: inline-block;
+      padding: 8px;
+      background: linear-gradient(135deg, #2a1f14, #1a1208, #2a1f14);
+      box-shadow:
+        0 0 0 1px rgba(201,168,76,0.25),
+        0 12px 40px rgba(0,0,0,0.7),
+        inset 0 1px 0 rgba(201,168,76,0.2),
+        inset 0 -1px 0 rgba(0,0,0,0.4);
+    }
+
+    .album-cover-frame::before {
+      content: '';
+      position: absolute; inset: 4px;
+      border: 1px solid rgba(201,168,76,0.15);
+      pointer-events: none; z-index: 1;
+    }
+
+    .album-cover {
+      display: block;
+      width: 200px; height: 200px;
+      object-fit: cover;
+      filter: sepia(0.25) contrast(1.08) brightness(0.88);
+      transition: filter 0.5s ease;
+    }
+
+    .album-cover:hover {
+      filter: sepia(0) contrast(1.05) brightness(0.95);
+    }
+
+    /* overlay aging effect */
+    .album-cover-frame::after {
+      content: '';
+      position: absolute; inset: 8px;
+      background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, transparent 50%, rgba(0,0,0,0.15) 100%);
+      pointer-events: none; z-index: 2;
+    }
+
+    .cover-caption {
+      margin-top: 1rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.55rem; letter-spacing: 0.3em;
+      color: var(--gold-dim); text-transform: uppercase; text-align: center;
+    }
+
+    /* ── MAJOR ARTIFACT layout: image left, content right ── */
+    .artifact--major .artifact-inner {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      grid-template-rows: auto auto;
+      gap: 0 3rem;
+    }
+
+    .artifact--major .artifact-cover {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      margin-bottom: 0;
+      align-self: start;
+      padding-top: 0.5rem;
+    }
+
+    .artifact--major .album-cover { width: 240px; height: 240px; }
+
+    .artifact--major .artifact-header {
+      grid-column: 2; grid-row: 1;
+    }
+
+    .artifact--major .artifact-content {
+      grid-column: 2; grid-row: 2;
+    }
+
+    /* ── ARTIFACT HEADER ── */
+    .artifact-header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .artifact-subject {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+      font-weight: 600; color: var(--gold-pale);
+      letter-spacing: 0.04em; line-height: 1.4;
+      margin-bottom: 0.8rem;
+    }
+    .artifact--major .artifact-subject { font-size: clamp(0.95rem, 3vw, 1.35rem); }
+
+    .artifact-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; }
+
+    .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
+    .meta-label {
+      font-family: 'Cinzel', serif; font-size: 0.52rem;
+      letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-dim);
+    }
+    .meta-value { font-size: 0.88rem; color: var(--dust); }
+
+    /* ── POST BODY ── */
+    .artifact-body {
+      color: var(--parchment); font-size: 1.05rem; line-height: 1.85; font-weight: 300;
+      white-space: pre-wrap;
+    }
+    .artifact-body a {
+      color: var(--gold-dim); text-decoration: none;
+      border-bottom: 1px dotted var(--gold-dim); word-break: break-all;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .artifact-body a:hover { color: var(--gold-pale); border-color: var(--gold-pale); }
+
+    /* ── TRACK LIST ── */
+    .track-list {
+      list-style: none; margin: 1.5rem 0;
+      border-left: 2px solid rgba(201,168,76,0.15);
+      padding-left: 1.5rem;
+    }
+    .track-list li {
+      padding: 0.3rem 0; font-size: 1rem; color: var(--parchment);
+      border-bottom: 1px solid rgba(201,168,76,0.05);
+    }
+    .track-list li:last-child { border-bottom: none; }
+    .track-num {
+      font-family: 'Cinzel', serif; font-size: 0.72rem;
+      color: var(--gold-dim); margin-right: 0.8rem; letter-spacing: 0.1em;
+    }
+    .track-note {
+      display: block; font-style: italic; font-size: 0.9rem; color: var(--dust);
+      padding: 0.3rem 0 0.5rem; line-height: 1.6;
+    }
+
+    /* ── FRAGMENT NOTE ── */
+    .artifact-fragment-note {
+      font-style: italic; color: var(--dust); font-size: 0.88rem;
+      margin-top: 1.2rem; padding: 0.8rem 1.2rem;
+      border-left: 2px solid rgba(201,168,76,0.2);
+    }
+
+    /* ── MAJOR CASE GLOW ── */
+    .artifact--major .artifact-case {
+      border-color: rgba(201,168,76,0.3);
+      box-shadow:
+        0 0 0 1px rgba(201,168,76,0.08),
+        0 0 60px rgba(0,0,0,0.7),
+        0 0 120px rgba(201,168,76,0.07),
+        inset 0 1px 0 rgba(201,168,76,0.2),
+        inset 0 -1px 0 rgba(0,0,0,0.5);
+    }
+
+    /* ── MUSEUM LABEL ── */
+    .museum-label {
+      margin-top: 1rem; padding: 1.2rem 3.5rem;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    .label-accession {
+      font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.3em;
+      color: rgba(138,110,47,0.6); text-transform: uppercase;
+    }
+    .label-condition {
+      font-family: 'Cormorant Garamond', serif; font-size: 0.8rem;
+      font-style: italic; color: rgba(138,110,47,0.5);
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      position: relative; z-index: 1;
+      text-align: center; padding: 4rem 2rem 5rem;
+      border-top: 1px solid rgba(201,168,76,0.08);
+    }
+    .site-footer p {
+      font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.35em;
+      color: rgba(138,110,47,0.45); text-transform: uppercase;
+      max-width: 480px; margin: 0 auto 0.8rem; line-height: 2;
+    }
+
+    /* ── PARTICLES ── */
+    #particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+    .particle {
+      position: absolute; width: 1px; height: 1px;
+      background: var(--gold); border-radius: 50%; opacity: 0;
+      animation: drift linear infinite;
+    }
+    @keyframes drift {
+      0%   { transform: translateY(100vh) translateX(0); opacity: 0; }
+      10%  { opacity: 0.4; }
+      90%  { opacity: 0.15; }
+      100% { transform: translateY(-20px) translateX(30px); opacity: 0; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 720px) {
+      .artifact--major .artifact-inner {
+        display: block;
+      }
+      .artifact--major .artifact-cover {
+        margin-bottom: 2rem;
+      }
+      .artifact--major .album-cover { width: 180px; height: 180px; }
+      .artifact-inner { padding: 2.5rem 1.5rem 2rem; }
+      .museum-label { padding: 1rem 1.5rem; }
+      .artifact-number { left: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="particles" aria-hidden="true"></div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<header class="hero">
+  <p class="hero-label">Digital Archaeological Exhibition &nbsp;·&nbsp; IsraTrance Music Reviews Forum &nbsp;·&nbsp; 2004–2007</p>
+  <div class="hero-rule"></div>
+  <h1 class="hero-title">The Guy Cohen<br>Archive</h1>
+  <p class="hero-subtitle">A Complete Record of the Known Writings</p>
+  <div class="hero-rule"></div>
+  <p class="hero-desc">
+    Three fragments survive. Recovered from the ruins of a once-thriving digital agora,
+    these inscriptions represent the complete extant written legacy of the forum elder
+    known only as <em>guy cohen</em> — Senior Member, Rank: 2,871 Posts, 417 Topics —
+    whose voice fell silent before the servers grew cold.
+  </p>
+  <div class="hero-scroll" aria-label="Scroll to begin">Enter the Exhibition</div>
+</header>
+
+<div class="section-divider"><span>The Fragments</span></div>
+
+<main class="exhibition" role="main">
+
+  <!-- ────────── FRAGMENT I ────────── -->
+  <article class="artifact" id="fragment-i">
+    <div class="artifact-case">
+      <div class="artifact-number">Fragment I &nbsp;·&nbsp; Circa 2004 CE</div>
+      <div class="artifact-inner">
+
+        <div class="artifact-cover">
+          <div class="album-cover-frame">
+            <img
+              src="./images/12-moons-solid-state.jpg"
+              alt="12 Moons — Solid State album cover"
+              class="album-cover"
+              loading="lazy"
+            >
+          </div>
+          <p class="cover-caption">12 Moons — Solid State &nbsp;·&nbsp; Candyflip Records, 2004</p>
+        </div>
+
+        <header class="artifact-header">
+          <h2 class="artifact-subject">On the Matter of 12 Moons — Solid State (Candyflip)</h2>
+          <div class="artifact-meta">
+            <div class="meta-item">
+              <span class="meta-label">Date of Inscription</span>
+              <span class="meta-value">September 8, 2004 — 12:35</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Post Identifier</span>
+              <span class="meta-value">#377809</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="artifact-body">For hebrew readers :
+<a href="http://layla.ynet.co.il/newLayla/magazine.asp?storyID=507" target="_blank" rel="noopener">http://layla.ynet.co.il/newLayla/magazine.asp?storyID=507</a></div>
+
+        <p class="artifact-fragment-note">
+          The shortest of the three recovered inscriptions. Twelve words. A gesture toward the mother tongue —
+          a reader's offering, a bridge between two worlds. The linked document has since crumbled to dust.
+          What it contained is now known only to those who were there.
+        </p>
+
+      </div>
+    </div>
+    <div class="museum-label">
+      <span class="label-accession">Accession No. GC-2004-001 &nbsp;·&nbsp; Music Reviews Wing</span>
+      <span class="label-condition">Condition: Fragmentary — external reference lost</span>
+    </div>
+  </article>
+
+  <!-- ────────── FRAGMENT II (centrepiece) ────────── -->
+  <article class="artifact artifact--major" id="fragment-ii">
+    <div class="artifact-case">
+      <div class="artifact-number">Fragment II &nbsp;·&nbsp; Circa 2007 CE &nbsp;·&nbsp; The Great Inscription</div>
+      <div class="artifact-inner">
+
+        <div class="artifact-cover">
+          <div class="album-cover-frame">
+            <img
+              src="./images/decoy-push-button-pony.jpg"
+              alt="Decoy — Push Button Pony album cover"
+              class="album-cover"
+              loading="lazy"
+            >
+          </div>
+          <p class="cover-caption">Decoy — Push Button Pony &nbsp;·&nbsp; Dance N Dust, 2007</p>
+        </div>
+
+        <div class="artifact-content">
+          <header class="artifact-header">
+            <h2 class="artifact-subject">On the Matter of Decoy — Push Button Pony (Dance N Dust)</h2>
+            <div class="artifact-meta">
+              <div class="meta-item">
+                <span class="meta-label">Date of Inscription</span>
+                <span class="meta-value">October 7, 2007 — 09:15</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Post Identifier</span>
+                <span class="meta-value">#1405872</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Thread Views</span>
+                <span class="meta-value">26,246</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Authored by</span>
+                <span class="meta-value">guy cohen — Thread Originator</span>
+              </div>
+            </div>
+          </header>
+
+          <div class="artifact-body">Hi All !
+Decoy's debut album ("Not Responding to Light") was my first meeting with Dance N Dust records and that is why I'm thankful to this project. Now, after year and half, Ian Chaplin and Philip Rex (Australia) are back with their second studio album called 'Push Button Pony'. Decoy's style can categorized under "Progressive Trance" genre, but this specific music is very hard to describe with words. It's time to push the button and play it on...</div>
+
+          <ul class="track-list" aria-label="Track-by-track commentary">
+            <li>
+              <span class="track-num">01.</span>Fat Side Down
+              <span class="track-note">The opening is simply shining — packing with morning melodies and heavy kick. The atmosphere is super comfortable, because the slow tempo and the anxious groove. The soft melodies are on the air all the time and create a warm vibes. It's just impossible not connect this material and if you ask me — nothing is better than smiley introduction.</span>
+            </li>
+            <li>
+              <span class="track-num">02.</span>Krosey
+              <span class="track-note">The second track is more Electro style influenced. When you listen to "Krosey" track, you get an interesting combination of Electro and down-tempo Progressive. I can't explain how, but this tune is going inside my heart and make me feel kind of sensitivity, which is completely wonderful. The most beautiful part here is starts on 04:20 with lovely playing and gradually developing until the big up on 06:20 — such a smart Electro moment!</span>
+            </li>
+            <li>
+              <span class="track-num">03.</span>Wake In Fright
+              <span class="track-note">After two happy tracks, this is the right time to get deeper. "Wake In Fright" track is start with groovy kick from the first second and slowly it's growing to symphony of sounds including some sweet saxophone playing, which get support from chilling melodies and massive kick. For those who reading this lines, I'm highly recommend to put your stereo volume on maximum, close the eyes and fly with this unique piece of art.</span>
+            </li>
+            <li>
+              <span class="track-num">04.</span>Push Button Pony
+              <span class="track-note">The first tracks are more suitable for alternative dance floors, but this track is direct to the main floor. "Push Button Pony" track is pure progressive-trance material — the groove is included, the vibes are evolving slowly and the most important thing — the track is always on progress. Brilliant!</span>
+            </li>
+            <li>
+              <span class="track-num">05.</span>Spamburger
+              <span class="track-note">Track number five is mostly the hit of the cd, but regretfully this is not the case here. In my opinion, "Spamburger" track is an average tune without special moments or parts to remember. I had some difficulty to connect it, but you should try and check the responds.</span>
+            </li>
+            <li>
+              <span class="track-num">06.</span>Nothing But The Truth
+              <span class="track-note">Here, the tempo is going a bit higher, but sill something is missing for me. Don't get me wrong — this track is fine &amp; danceable sometimes, but I expect something slightly more different and special. I can't find any word to describe it other than — boring.</span>
+            </li>
+            <li>
+              <span class="track-num">07.</span>Silly Sex
+              <span class="track-note">Now we back to business with "Silly Sex" track — the kick is fat, the effects are fitting well and there is a story to imagine. I really like the atmosphere, it's simply magical. Good job guys.</span>
+            </li>
+            <li>
+              <span class="track-num">08.</span>Axis Mundi
+              <span class="track-note">Uniqueness is the name of the game. "Axis Mundi" track is a "sticky" track — the listener is must stick &amp; focus on the track and simply flow with it. The vibes are so pleasant cause the beautiful melodies. The brake on the middle is maybe can't create dust storm in the dance floor, but it surely has the ability to make your brain work extra-hours.</span>
+            </li>
+            <li>
+              <span class="track-num">09.</span>Ghost Kisser
+              <span class="track-note">What a positive way to close the album. "Ghost Kisser" tune is full of nice melodies and guitar riffs on down-tempo. It's a funky track with freestyle spirit.</span>
+            </li>
+          </ul>
+
+          <div class="artifact-body" style="margin-top:1.5rem">Purchase artifact referenced:
+<a href="http://www.psyshop.com/shop/CDs/dnd/dnd1cd009.html" target="_blank" rel="noopener">http://www.psyshop.com/shop/CDs/dnd/dnd1cd009.html</a></div>
+        </div><!-- /artifact-content -->
+
+      </div>
+    </div>
+    <div class="museum-label">
+      <span class="label-accession">Accession No. GC-2007-001 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; The Major Work</span>
+      <span class="label-condition">Condition: Complete — nine sub-inscriptions intact</span>
+    </div>
+  </article>
+
+  <!-- ────────── FRAGMENT III ────────── -->
+  <article class="artifact" id="fragment-iii">
+    <div class="artifact-case">
+      <div class="artifact-number">Fragment III &nbsp;·&nbsp; Circa 2007 CE &nbsp;·&nbsp; Final Known Inscription</div>
+      <div class="artifact-inner">
+
+        <div class="artifact-cover">
+          <div class="album-cover-frame">
+            <img
+              src="./images/younger-brother-last-days.jpg"
+              alt="Younger Brother — The Last Days of Gravity album cover"
+              class="album-cover"
+              loading="lazy"
+            >
+          </div>
+          <p class="cover-caption">Younger Brother — The Last Days of Gravity &nbsp;·&nbsp; Twisted Records, 2007</p>
+        </div>
+
+        <header class="artifact-header">
+          <h2 class="artifact-subject">On the Matter of Younger Brother — The Last Days of Gravity (Twisted)</h2>
+          <div class="artifact-meta">
+            <div class="meta-item">
+              <span class="meta-label">Date of Inscription</span>
+              <span class="meta-value">November 17, 2007 — 19:01</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Post Identifier</span>
+              <span class="meta-value">#1433305</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="artifact-body">What a geniously production !
+This dou did an amazing job here and suprised us all despite the very high expetations.
+Respect.</div>
+
+        <p class="artifact-fragment-note">
+          The final inscription. Three lines written forty days after the Great Inscription.
+          The word <em>geniously</em> — neither <em>genius</em> nor <em>genial</em> in any known lexicon —
+          appears here as a hapax legomenon, coined once and abandoned to history.
+          After this, silence.
+        </p>
+
+      </div>
+    </div>
+    <div class="museum-label">
+      <span class="label-accession">Accession No. GC-2007-002 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; Terminus</span>
+      <span class="label-condition">Condition: Complete — brevity intentional</span>
+    </div>
+  </article>
+
+</main>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="site-footer">
+  <div class="hero-rule" style="margin-bottom:2rem"></div>
+  <p>These three fragments constitute the complete known writings of guy cohen<br>
+  within the Music Reviews sector of forum.isratrance.com.</p>
+  <p style="margin-top:1rem">Curator's note: Senior Member &nbsp;·&nbsp; 2,871 posts &nbsp;·&nbsp; 417 topics &nbsp;·&nbsp; user id unknown</p>
+  <p style="margin-top:1rem; opacity:0.5">The archive was assembled from the ruins of a forum.<br>
+  All external links are presumed dead. The music lives on.</p>
+</footer>
+
+<script>
+  // Dust particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 28; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 1.5 + 0.5;
+    p.style.cssText = `
+      left: ${Math.random() * 100}%;
+      width: ${size}px;
+      height: ${size}px;
+      animation-duration: ${12 + Math.random() * 20}s;
+      animation-delay: ${-Math.random() * 20}s;
+      opacity: 0;
+    `;
+    container.appendChild(p);
+  }
+
+  // Scroll-triggered entrance animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.artifact').forEach(el => {
+    el.style.cssText = 'opacity:0; transform:translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease;';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
