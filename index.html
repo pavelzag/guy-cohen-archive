@@ -551,7 +551,7 @@
         </div>
 
         <header class="artifact-header">
-          <h2 class="artifact-subject">On the Matter of Void — The Punishment (Chemical Crew)</h2>
+          <h2 class="artifact-subject">Void — The Punishment (Chemical Crew)</h2>
           <div class="artifact-meta">
             <div class="meta-item">
               <span class="meta-label">Date of Inscription</span>
@@ -624,7 +624,7 @@ Feel free to add comments !</div>
 
         <div class="artifact-content">
           <header class="artifact-header">
-            <h2 class="artifact-subject">On the Matter of Loud — Some Kind Of Creativity (Drive Records)</h2>
+            <h2 class="artifact-subject">Loud — Some Kind Of Creativity (Drive Records)</h2>
             <div class="artifact-meta">
               <div class="meta-item">
                 <span class="meta-label">Date of Inscription</span>
@@ -728,7 +728,7 @@ The name of the album is gives a little clue about the music, so I hope you all 
 
         <div class="artifact-content">
           <header class="artifact-header">
-            <h2 class="artifact-subject">On the Matter of Prometheus — Corridor Of Mirrors (Twisted Records)</h2>
+            <h2 class="artifact-subject">Prometheus — Corridor Of Mirrors (Twisted Records)</h2>
             <div class="artifact-meta">
               <div class="meta-item">
                 <span class="meta-label">Date of Inscription</span>
@@ -824,7 +824,7 @@ The cd is available through Twisted's web site:
 
         <div class="artifact-content">
           <header class="artifact-header">
-            <h2 class="artifact-subject">On the Matter of Decoy — Push Button Pony (Dance N Dust)</h2>
+            <h2 class="artifact-subject">Decoy — Push Button Pony (Dance N Dust)</h2>
             <div class="artifact-meta">
               <div class="meta-item">
                 <span class="meta-label">Date of Inscription</span>
@@ -951,7 +951,7 @@ Decoy's debut album ("Not Responding to Light") was my first meeting with Dance 
     searchIndex.push({
       type: 'fragment',
       badge: fragLabel.split('·')[0].trim(),
-      title: subject.replace(/^On the Matter of /, ''),
+      title: subject,
       sub: caption,
       keywords: [subject, caption, fragLabel].join(' ').toLowerCase(),
       scrollEl: artifact,
@@ -969,7 +969,7 @@ Decoy's debut album ("Not Responding to Light") was my first meeting with Dance 
         type: 'track',
         badge,
         title: trackName,
-        sub: subject.replace(/^On the Matter of /, ''),
+        sub: subject,
         keywords: [trackName, noteText].join(' ').toLowerCase(),
         scrollEl: li,
         highlightEl: li,
@@ -984,7 +984,7 @@ Decoy's debut album ("Not Responding to Light") was my first meeting with Dance 
       searchIndex.push({
         type: 'passage',
         badge: fragLabel.split('·')[0].trim(),
-        title: subject.replace(/^On the Matter of /, ''),
+        title: subject,
         sub: text.length > 100 ? text.slice(0, 100) + '…' : text,
         keywords: text.toLowerCase(),
         scrollEl: bodyEl,
