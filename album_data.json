@@ -4,7 +4,12 @@
     "discogs_url": "https://www.discogs.com/release/56864",
     "release_date": "1995",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Hi-Tide",
+      "Dr. Blowfins Experiment",
+      "Untitled"
+    ]
   },
   "54023": {
     "discogs_id": 391825,
@@ -12,7 +17,20 @@
     "release_date": "2005-01-16",
     "asin": null,
     "spotify_id": "5FgCduSEhz7lJ2fRB7eEtk",
-    "spotify_url": "https://open.spotify.com/album/5FgCduSEhz7lJ2fRB7eEtk"
+    "spotify_url": "https://open.spotify.com/album/5FgCduSEhz7lJ2fRB7eEtk",
+    "discogs_tracks": [
+      "Sleep On",
+      "I Believe",
+      "Mind And Soul",
+      "Natural",
+      "D Paradise",
+      "Faith",
+      "Deep Fatal Moment",
+      "Hyper Love",
+      "Forever And Ever",
+      "Point Of View",
+      "En Sof"
+    ]
   },
   "102304": {
     "discogs_id": 889452,
@@ -20,14 +38,36 @@
     "release_date": "2006-11-10",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Once Upon A Time",
+      "Del Aire",
+      "Spindle Trooper",
+      "5 Bit Away",
+      "Structure Of Sound",
+      "Inovation",
+      "Sabor A Techno",
+      "Atom Suit",
+      "Highway 420"
+    ]
   },
   "40758": {
     "discogs_id": 306620,
     "discogs_url": "https://www.discogs.com/release/306620",
     "release_date": "2004-07-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Tantra",
+      "Psyde",
+      "Cultures",
+      "Tropical Magic",
+      "Albert Balbert",
+      "Twister",
+      "Dream Drop",
+      "New Possibilities",
+      "Pause"
+    ]
   },
   "54633": {
     "discogs_id": 389678,
@@ -35,28 +75,72 @@
     "release_date": "2005-01-12",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Pendulum (Mandylion Remix)",
+      "Neuland",
+      "Monastary Of Sound",
+      "Ghost In The Machine",
+      "Blissfull Guidance",
+      "Chill Thrill Troopers",
+      "Simulated Roadmap",
+      "Muzzic",
+      "Jack The Groove"
+    ]
   },
   "87078": {
     "discogs_id": 707783,
     "discogs_url": "https://www.discogs.com/release/707783",
     "release_date": "2006-03-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Amount",
+      "Loxan",
+      "Waveview",
+      "Multistage",
+      "Editmode",
+      "Erase",
+      "Kicka",
+      "53er",
+      "Entar"
+    ]
   },
   "63941": {
     "discogs_id": 468423,
     "discogs_url": "https://www.discogs.com/release/468423",
     "release_date": "2005-06-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "U-Topia",
+      "G Shock",
+      "Sonic Boom (Album Version)",
+      "System 1000",
+      "Orbital Frame",
+      "Space Fantasy",
+      "Atomic Drive",
+      "Brain Freeze",
+      "Total Acid"
+    ]
   },
   "113105": {
     "discogs_id": 1001772,
     "discogs_url": "https://www.discogs.com/release/1001772",
     "release_date": "2007-06-00",
     "spotify_id": "2zUhcXnEtbj4dTJt2UWhj1",
-    "spotify_url": "https://open.spotify.com/album/2zUhcXnEtbj4dTJt2UWhj1"
+    "spotify_url": "https://open.spotify.com/album/2zUhcXnEtbj4dTJt2UWhj1",
+    "discogs_tracks": [
+      "Spaceballs",
+      "I Beg You",
+      "Frogride",
+      "Fly To Gana",
+      "Remember (Martin Remix)",
+      "Questions",
+      "Tricolore",
+      "Deep Passion",
+      "Cold Fever"
+    ]
   },
   "110142": {
     "spotify_id": "77jRvOKUXCnRb2dev4Yz5z",
@@ -68,21 +152,57 @@
     "release_date": "2007-11-05",
     "asin": null,
     "spotify_id": "5uE7OpuM8N1oo5IllhELGe",
-    "spotify_url": "https://open.spotify.com/album/5uE7OpuM8N1oo5IllhELGe"
+    "spotify_url": "https://open.spotify.com/album/5uE7OpuM8N1oo5IllhELGe",
+    "discogs_tracks": [
+      "The Lost Room (Part A)",
+      "Floating Hz",
+      "Rush",
+      "Late Night Drive",
+      "Orange",
+      "Return Of The Machines (Echotek Remix)",
+      "Androids",
+      "Everything Is You",
+      "Point Of Life",
+      "Radio Active"
+    ]
   },
   "62281": {
     "discogs_id": 460739,
     "discogs_url": "https://www.discogs.com/release/460739",
     "release_date": "2005-05-14",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Secrets",
+      "Close Your Eyes",
+      "3Dellusions",
+      "Point Blank",
+      "Spacey Atmosphere",
+      "Intoxicated",
+      "Consciousness",
+      "Moving Higher",
+      "Hypnotize"
+    ]
   },
   "66554": {
     "discogs_id": 478228,
     "discogs_url": "https://www.discogs.com/release/478228",
     "release_date": "2005-06-00",
     "spotify_id": "4dy6lOQnI3kHpXqAO38cLB",
-    "spotify_url": "https://open.spotify.com/album/4dy6lOQnI3kHpXqAO38cLB"
+    "spotify_url": "https://open.spotify.com/album/4dy6lOQnI3kHpXqAO38cLB",
+    "discogs_tracks": [
+      "Fall Out",
+      "Tripsphere",
+      "Cosmovatis",
+      "Screaming Tears",
+      "In A Cell",
+      "Criminal Intention",
+      "Night Out (Max Mix)",
+      "Nostos (Vocal Edition - Radio Cut)",
+      "Epiros",
+      "Song For Alex",
+      "Pray For Rain"
+    ]
   },
   "98319": {
     "discogs_id": 783619,
@@ -90,28 +210,74 @@
     "release_date": "2006-09-00",
     "asin": null,
     "spotify_id": "5nUGg8uZO2s5jhlpoHWlfL",
-    "spotify_url": "https://open.spotify.com/album/5nUGg8uZO2s5jhlpoHWlfL"
+    "spotify_url": "https://open.spotify.com/album/5nUGg8uZO2s5jhlpoHWlfL",
+    "discogs_tracks": [
+      "Princess Guenavier",
+      "Pussy Dancers",
+      "Blood For My Vampire",
+      "Holy Skys Of Eden",
+      "Violent Energy",
+      "Power Is Love. Love Is A Dancefloor",
+      "Circus Psychedelius",
+      "Father Of All",
+      "Flutaie",
+      "Dreaming Japan (Live Recording)"
+    ]
   },
   "49149": {
     "discogs_id": 354346,
     "discogs_url": "https://www.discogs.com/release/354346",
     "release_date": "2004-11-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Deep In Your Soul",
+      "Walldorf & Stettler",
+      "Audiograbber",
+      "Squeeze The Day",
+      "Neverland",
+      "Last Process",
+      "Mad Robots",
+      "Pendulum (Beat Brothers Remix)"
+    ]
   },
   "111421": {
     "discogs_id": 982017,
     "discogs_url": "https://www.discogs.com/release/982017",
     "release_date": "2007-05-00",
     "spotify_id": "0Kz8eXjVp1BnB9IoA5qSQ9",
-    "spotify_url": "https://open.spotify.com/album/0Kz8eXjVp1BnB9IoA5qSQ9"
+    "spotify_url": "https://open.spotify.com/album/0Kz8eXjVp1BnB9IoA5qSQ9",
+    "discogs_tracks": [
+      "Tikva",
+      "The Human Brain",
+      "Fucking Confused",
+      "Vegetal Twist",
+      "Brave",
+      "One More",
+      "Succubus",
+      "Trip Trap",
+      "Lord Of",
+      "Misu  Soup"
+    ]
   },
   "92535": {
     "discogs_id": 730887,
     "discogs_url": "https://www.discogs.com/release/730887",
     "release_date": "2006-06-00",
     "spotify_id": "2ZCTs3xFT8WlDjRha8etdi",
-    "spotify_url": "https://open.spotify.com/album/2ZCTs3xFT8WlDjRha8etdi"
+    "spotify_url": "https://open.spotify.com/album/2ZCTs3xFT8WlDjRha8etdi",
+    "discogs_tracks": [
+      "Access Denied",
+      "After Shock",
+      "Imitation Of Life",
+      "I'm Feeling Bizarre",
+      "Anti Gravity",
+      "Nerdlead",
+      "Time To Kill",
+      "I'm Burning",
+      "New Vision",
+      "Hour Of Power"
+    ]
   },
   "47747": {
     "discogs_id": 316148,
@@ -119,28 +285,76 @@
     "release_date": "2004-08-00",
     "asin": null,
     "spotify_id": "6GLrqWhGcQb25qWUuB2EVa",
-    "spotify_url": "https://open.spotify.com/album/6GLrqWhGcQb25qWUuB2EVa"
+    "spotify_url": "https://open.spotify.com/album/6GLrqWhGcQb25qWUuB2EVa",
+    "discogs_tracks": [
+      "My Mind",
+      "Armadildo",
+      "Love Of My Life",
+      "Shut Up",
+      "Go On",
+      "Pure",
+      "Babas Fritos",
+      "Schwarmageddon",
+      "Just For Kicks"
+    ]
   },
   "82284": {
     "discogs_id": 709851,
     "discogs_url": "https://www.discogs.com/release/709851",
     "release_date": "2006",
     "spotify_id": "6EcaZbDDwUbPXENvUraZWB",
-    "spotify_url": "https://open.spotify.com/album/6EcaZbDDwUbPXENvUraZWB"
+    "spotify_url": "https://open.spotify.com/album/6EcaZbDDwUbPXENvUraZWB",
+    "discogs_tracks": [
+      "Anything",
+      "Confusedanced",
+      "Dat Tuner",
+      "Flaxible",
+      "Fly To Me",
+      "Made In",
+      "Numpad",
+      "Quadrace",
+      "Trappander"
+    ]
   },
   "72253": {
     "discogs_id": 518346,
     "discogs_url": "https://www.discogs.com/release/518346",
     "release_date": "2005-09-05",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Heaven Underground",
+      "Breath",
+      "Mattie & Kyra",
+      "Whisper",
+      "Private Moon",
+      "Sunderam",
+      "Facing The Sun",
+      "My Life",
+      "Steer",
+      "Twin Moons",
+      "Here I Am",
+      "Eternal Source"
+    ]
   },
   "72029": {
     "discogs_id": 515476,
     "discogs_url": "https://www.discogs.com/release/515476",
     "release_date": "2005-07-27",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Kung-Fu",
+      "Murphy's Law (Remix)",
+      "We Must Believe",
+      "Lost Connection",
+      "Spinning",
+      "Escape",
+      "X-Tremadura",
+      "Dynamic",
+      "Verify",
+      "Good Brick"
+    ]
   },
   "75216": {
     "discogs_id": 563493,
@@ -148,42 +362,114 @@
     "release_date": "2005-11-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Open Society",
+      "High Cue",
+      "Ultrabizzy",
+      "Time Wolers",
+      "Science Is God (Ultravoice RMX)",
+      "The Other Side (Visual Paradox Edit)",
+      "Natural Vibes",
+      "Superheroes",
+      "Bite The Moon",
+      "Tubeless (Lish RMX)"
+    ]
   },
   "84716": {
     "discogs_id": 648467,
     "discogs_url": "https://www.discogs.com/release/648467",
     "release_date": "2006-03-27",
     "spotify_id": "2gd7I9bLDNA5w4QfPd3tTz",
-    "spotify_url": "https://open.spotify.com/album/2gd7I9bLDNA5w4QfPd3tTz"
+    "spotify_url": "https://open.spotify.com/album/2gd7I9bLDNA5w4QfPd3tTz",
+    "discogs_tracks": [
+      "Body Shaker",
+      "Run Out System",
+      "Rock The Show",
+      "Sound Like A Melody",
+      "November Rain",
+      "UniSex",
+      "Keep On Rocking",
+      "Syncopa",
+      "Gabriel",
+      "Rashid"
+    ]
   },
   "85263": {
     "discogs_id": 655371,
     "discogs_url": "https://www.discogs.com/release/655371",
     "release_date": "2006-03-30",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "7 AM",
+      "Amanita Muscaria",
+      "Sued Avatihim",
+      "Arise",
+      "Isqh",
+      "What?",
+      "Dendrimers & Dreamers",
+      "Mr. Wave",
+      "Gayo (2005 Remake)",
+      "Children Of Earth (Ambient Version)",
+      "Adish"
+    ]
   },
   "101670": {
     "discogs_id": 843259,
     "discogs_url": "https://www.discogs.com/release/843259",
     "release_date": "2006-11-00",
     "spotify_id": "4HAeTP7QjuimMW5WKJiUZS",
-    "spotify_url": "https://open.spotify.com/album/4HAeTP7QjuimMW5WKJiUZS"
+    "spotify_url": "https://open.spotify.com/album/4HAeTP7QjuimMW5WKJiUZS",
+    "discogs_tracks": [
+      "Divine",
+      "Sound Of Silence",
+      "We're Gonna B Cool",
+      "Elect-On",
+      "Loose Control",
+      "Star Wars",
+      "I'm Looking (Unique vs. Rewind Evolution Remix)",
+      "La Revoluci\u00f3n",
+      "Eve Electro",
+      "Ambivalent Frequency"
+    ]
   },
   "83876": {
     "discogs_id": 641106,
     "discogs_url": "https://www.discogs.com/release/641106",
     "release_date": "2006-03-06",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Quantum Mechanics",
+      "Fatality",
+      "Single Cell",
+      "Amino Acid",
+      "Direct Source",
+      "Alternative Reality",
+      "Noise Freak (2006 Audio Mix)",
+      "Kuromatic",
+      "Mateluna",
+      "Firedance (Remix)"
+    ]
   },
   "97199": {
     "discogs_id": 805958,
     "discogs_url": "https://www.discogs.com/release/805958",
     "release_date": "2006-10-06",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Kick-It (Album Version)",
+      "In The Heights (V-tunes Rmx)",
+      "Progression (Album Version)",
+      "Simple, Dirty & Side Chained",
+      "No One Forever",
+      "Tripple Experiment",
+      "Stupid Brain",
+      "Quadrad",
+      "Funky Angel"
+    ]
   },
   "80826": {
     "discogs_id": 607107,
@@ -191,35 +477,87 @@
     "release_date": "2006-01-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Dig It",
+      "Get Control",
+      "L.S.Dream",
+      "Nasty",
+      "Groove In Space",
+      "Donky Drunky",
+      "Mirage",
+      "High Gear",
+      "Underworld",
+      "Flux"
+    ]
   },
   "124657": {
     "discogs_id": 1113193,
     "discogs_url": "https://www.discogs.com/release/1113193",
     "release_date": "2007-10-15",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Rumble In The Jungle (Jey & Ex Rmx)",
+      "Simple, Dirty & Side Chained (Quantize & Buttersonic Rmx)",
+      "Energy (Aerospace Remix)",
+      "Passion",
+      "The Future Is Here (Quantize Remix)",
+      "Think About You",
+      "Electro Buzz",
+      "U Can Get Some",
+      "Woody Twister"
+    ]
   },
   "96419": {
     "discogs_id": 788386,
     "discogs_url": "https://www.discogs.com/release/788386",
     "release_date": "2006-09-14",
     "spotify_id": "78MZJcMv8GGIF8FF2C0Cyc",
-    "spotify_url": "https://open.spotify.com/album/78MZJcMv8GGIF8FF2C0Cyc"
+    "spotify_url": "https://open.spotify.com/album/78MZJcMv8GGIF8FF2C0Cyc",
+    "discogs_tracks": [
+      "Sesto Dance",
+      "Rollercoaster",
+      "1st Quality",
+      "Perfect Day",
+      "Disconnecting",
+      "Trance In Motion",
+      "People",
+      "Glory",
+      "Pumpkin",
+      "Frozen Dream"
+    ]
   },
   "72376": {
     "discogs_id": 535453,
     "discogs_url": "https://www.discogs.com/release/535453",
     "release_date": "2005-09-30",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Battleship",
+      "Paranoia",
+      "Bottom Line"
+    ]
   },
   "67007": {
     "discogs_id": 480581,
     "discogs_url": "https://www.discogs.com/release/480581",
     "release_date": "2005-06-26",
     "spotify_id": "42riOORQp3kE8bcBwj9WF3",
-    "spotify_url": "https://open.spotify.com/album/42riOORQp3kE8bcBwj9WF3"
+    "spotify_url": "https://open.spotify.com/album/42riOORQp3kE8bcBwj9WF3",
+    "discogs_tracks": [
+      "Got My Senses Back",
+      "Wishes",
+      "Last Tune",
+      "Electrical Inspiration",
+      "Untitled Yet",
+      "Miscommunication",
+      "Aspects Of Music",
+      "Feedback",
+      "Late Echoes Of Goa",
+      "R U Cool?"
+    ]
   },
   "73228": {
     "discogs_id": 564112,
@@ -227,21 +565,55 @@
     "release_date": "2005-10-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "System Glitch (S>Range Remix)",
+      "Application Rate (Live Version)",
+      "Timesteps",
+      "You Got Too Close (Closer Edit)",
+      "Bad Behind",
+      "Away (La Baaz Remix)",
+      "Questions",
+      "Sex Drugs N Robbydogs",
+      "Moody"
+    ]
   },
   "102342": {
     "discogs_id": 864782,
     "discogs_url": "https://www.discogs.com/release/864782",
     "release_date": "2006-12-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Burning Groove",
+      "Smooth Vibes",
+      "Ping Pong",
+      "Rhythm In Motion",
+      "You As Well",
+      "Music Prostitute",
+      "Paradise",
+      "Funky Hostage",
+      "Multi Engine"
+    ]
   },
   "59315": {
     "discogs_id": 238795,
     "discogs_url": "https://www.discogs.com/release/238795",
     "release_date": "2004-03-10",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Passion Of Mind",
+      "American Pussy",
+      "Love Simulation",
+      "Space Port",
+      "2 Much",
+      "Computer Voodoo",
+      "Out Of Earth",
+      "Insaine Genious",
+      "First Rain",
+      "Echology Of Souls"
+    ]
   },
   "98562": {
     "discogs_id": 807577,
@@ -249,112 +621,293 @@
     "release_date": "2006-10-09",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Excerpts From Dreams (Sun Control Species Rmx)",
+      "Doors Of Perception",
+      "Space Navigator",
+      "We Find A Way (Earsugar Rmx)",
+      "John Lego",
+      "Vodka Cola",
+      "Down On The Streets (Symphonix Rmx)",
+      "Free Days"
+    ]
   },
   "109109": {
     "discogs_id": 976179,
     "discogs_url": "https://www.discogs.com/release/976179",
     "release_date": "2007-04-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "The Secret Of The Muse",
+      "Solitaire",
+      "Fade To Gray",
+      "Relax",
+      "Virtual DNA",
+      "Nevralgic",
+      "G8",
+      "Dimension Seeker (Huicholity Remix)",
+      "Going To The Matrix"
+    ]
   },
   "77656": {
     "discogs_id": 577535,
     "discogs_url": "https://www.discogs.com/release/577535",
     "release_date": "2005-11-24",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Dirtbag (Remix)",
+      "Feel The Vibe",
+      "Borderline (Remix)",
+      "Bad Girl",
+      "Electro Panic (Psycraft Remix)",
+      "On The Edge",
+      "Law Of Karma",
+      "Computech",
+      "Night Drive",
+      "Inside Your Heaven"
+    ]
   },
   "106800": {
     "discogs_id": 906224,
     "discogs_url": "https://www.discogs.com/release/906224",
     "release_date": "2007-02-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Low Tide",
+      "Gentle Fuck",
+      "Multi-Climax",
+      "Release",
+      "Bizarre Hi",
+      "Alies Groovy",
+      "Scape",
+      "Illusions",
+      "Passion Session (NASA Remix)"
+    ]
   },
   "55572": {
     "discogs_id": 406185,
     "discogs_url": "https://www.discogs.com/release/406185",
     "release_date": "2005-02-00",
     "spotify_id": "6xckOXM2a6YuPd5cZf0Q6r",
-    "spotify_url": "https://open.spotify.com/album/6xckOXM2a6YuPd5cZf0Q6r"
+    "spotify_url": "https://open.spotify.com/album/6xckOXM2a6YuPd5cZf0Q6r",
+    "discogs_tracks": [
+      "Time Traveler Of Trance",
+      "Let's Turn On",
+      "Shambala",
+      "Luna Overdrive",
+      "Spacial Distortion",
+      "Whipbird",
+      "The Great Spirit (Hallucinogenic Remix)",
+      "Karma 209",
+      "Witchcraft Magic",
+      "Sly-Ed"
+    ]
   },
   "131876": {
     "discogs_id": 1290554,
     "discogs_url": "https://www.discogs.com/release/1290554",
     "release_date": "2008-03-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Down N' Out (Remix 2008)",
+      "Big Brother",
+      "Terra Soul",
+      "The Jedi (Xerox Remix)",
+      "Assimilation Of Reality (DNA Remix)",
+      "Beat The Base",
+      "1.2.3",
+      "Gin N' Tonic",
+      "Beautiful Day (Remix)"
+    ]
   },
   "74184": {
     "discogs_id": 552391,
     "discogs_url": "https://www.discogs.com/release/552391",
     "release_date": "2005-10-00",
     "spotify_id": "5pOabJkQynTkawlKE3D6BU",
-    "spotify_url": "https://open.spotify.com/album/5pOabJkQynTkawlKE3D6BU"
+    "spotify_url": "https://open.spotify.com/album/5pOabJkQynTkawlKE3D6BU",
+    "discogs_tracks": [
+      "Technofood",
+      "Visual Contact",
+      "Technology",
+      "Welcome To Mexico",
+      "Visual Sunny Day",
+      "Dreamland",
+      "Gain Over (Live Mix)",
+      "Duty Freaks",
+      "Naughty Of (Mega Mix)"
+    ]
   },
   "64848": {
     "discogs_id": 106078,
     "discogs_url": "https://www.discogs.com/release/106078",
     "release_date": "1995-07-01",
     "spotify_id": "5iZOImxv1IROt6R13Qtjia",
-    "spotify_url": "https://open.spotify.com/album/5iZOImxv1IROt6R13Qtjia"
+    "spotify_url": "https://open.spotify.com/album/5iZOImxv1IROt6R13Qtjia",
+    "discogs_tracks": [
+      "Vertigo",
+      "Mad Horizon",
+      "Amora",
+      "Naxus",
+      "Sweet Coming Home",
+      "Sid",
+      "The Key",
+      "Camel",
+      "Shiva"
+    ]
   },
   "37895": {
     "discogs_id": 330706,
     "discogs_url": "https://www.discogs.com/release/330706",
     "release_date": "2004",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Punishment",
+      "The Masterblaster",
+      "Machine",
+      "In My Dreams",
+      "Hysterical",
+      "Energize",
+      "Hot Stuff",
+      "True Love",
+      "Time Tunnel",
+      "Dance Electric"
+    ]
   },
   "131378": {
     "discogs_id": 1263303,
     "discogs_url": "https://www.discogs.com/release/1263303",
     "release_date": "2008-03-00",
     "spotify_id": "1A2Tk7ASYDPIli7Kv2tcMg",
-    "spotify_url": "https://open.spotify.com/album/1A2Tk7ASYDPIli7Kv2tcMg"
+    "spotify_url": "https://open.spotify.com/album/1A2Tk7ASYDPIli7Kv2tcMg",
+    "discogs_tracks": [
+      "Another Road",
+      "Displacement",
+      "Sequence Select",
+      "24/7",
+      "Argaman",
+      "21Gram",
+      "Nocturno",
+      "Island",
+      "Rational Vision",
+      "Cyber Hiker (Insomnia Rmx)"
+    ]
   },
   "101977": {
     "discogs_id": 852372,
     "discogs_url": "https://www.discogs.com/release/852372",
     "release_date": "2006-11-00",
     "spotify_id": "70lQu0qLxoJ157UD2gaHBZ",
-    "spotify_url": "https://open.spotify.com/album/70lQu0qLxoJ157UD2gaHBZ"
+    "spotify_url": "https://open.spotify.com/album/70lQu0qLxoJ157UD2gaHBZ",
+    "discogs_tracks": [
+      "Be Light",
+      "Free Fall",
+      "Vibe Rate",
+      "Air Bureau",
+      "Soundbite",
+      "War Zone",
+      "Elevation",
+      "Dat Tuner (Remix)",
+      "Wanna Run (Remix)",
+      "Sitting On A Stone"
+    ]
   },
   "55505": {
     "discogs_id": 418568,
     "discogs_url": "https://www.discogs.com/release/418568",
     "release_date": "2005-01-00",
     "spotify_id": "00aXTogUfKKkxvZzNswrf6",
-    "spotify_url": "https://open.spotify.com/album/00aXTogUfKKkxvZzNswrf6"
+    "spotify_url": "https://open.spotify.com/album/00aXTogUfKKkxvZzNswrf6",
+    "discogs_tracks": [
+      "Mr. Easter",
+      "A Living Monitor",
+      "So Long So Far",
+      "Kayo Attack",
+      "The Way We Like It",
+      "Emotion Chaos",
+      "Back To Mind",
+      "Setup Con.Com",
+      "Deep To Tiv",
+      "Electro Funk"
+    ]
   },
   "123447": {
     "discogs_id": 1108922,
     "discogs_url": "https://www.discogs.com/release/1108922",
     "release_date": "2007-09-07",
     "spotify_id": "3kqGTeuPhpgjV12J9TahB0",
-    "spotify_url": "https://open.spotify.com/album/3kqGTeuPhpgjV12J9TahB0"
+    "spotify_url": "https://open.spotify.com/album/3kqGTeuPhpgjV12J9TahB0",
+    "discogs_tracks": [
+      "Fat Side Down",
+      "Krosey",
+      "Wake In Fright",
+      "Push Button Pony",
+      "Spamburger",
+      "Nothing But The Truth",
+      "Silly Sex",
+      "Axis Mundi",
+      "Ghost Kisser"
+    ]
   },
   "78515": {
     "discogs_id": 585392,
     "discogs_url": "https://www.discogs.com/release/585392",
     "release_date": "2005-12-09",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Bubbles",
+      "Past Will Be Future (D-Nox & Beckers Remix)",
+      "Go With Da Flow",
+      "Implant (Perfect Stranger Remix)",
+      "Transmission",
+      "Opposites",
+      "Tame The Beast",
+      "Pagan Pulse",
+      "Sonic Substance"
+    ]
   },
   "42404": {
     "discogs_id": 383882,
     "discogs_url": "https://www.discogs.com/release/383882",
     "release_date": "2004-09-00",
     "spotify_id": "1AAKmYj2g7PB1Zv2wTk6ZM",
-    "spotify_url": "https://open.spotify.com/album/1AAKmYj2g7PB1Zv2wTk6ZM"
+    "spotify_url": "https://open.spotify.com/album/1AAKmYj2g7PB1Zv2wTk6ZM",
+    "discogs_tracks": [
+      "Sleep-Walker",
+      "Emotions",
+      "Electro Shock",
+      "2004",
+      "Daybreaks",
+      "Raver",
+      "Tranceformer",
+      "Mechanical Dream",
+      "Rising Force"
+    ]
   },
   "89557": {
     "discogs_id": 686546,
     "discogs_url": "https://www.discogs.com/release/686546",
     "release_date": "2006-05-00",
     "spotify_id": "5z8qyFOTGFiwIQGWsyf4j4",
-    "spotify_url": "https://open.spotify.com/album/5z8qyFOTGFiwIQGWsyf4j4"
+    "spotify_url": "https://open.spotify.com/album/5z8qyFOTGFiwIQGWsyf4j4",
+    "discogs_tracks": [
+      "Heaven On Earth",
+      "Adrenaline",
+      "Spiders",
+      "Return Of The Machines",
+      "Show No Mercy",
+      "Art Beats",
+      "Unusual Game",
+      "Inner Twist",
+      "Dragon Ball"
+    ]
   },
   "129677": {
     "discogs_id": 1224484,
@@ -362,28 +915,74 @@
     "release_date": "2008-02-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Dream Vision (Twilight Feat. Launchpad Rmx)",
+      "Holy People",
+      "Impulse",
+      "If I Could B U",
+      "Elephants",
+      "Iron Butterfly",
+      "Melody Up",
+      "Wet & Wild",
+      "November Gain",
+      "The Guero"
+    ]
   },
   "99146": {
     "discogs_id": 816938,
     "discogs_url": "https://www.discogs.com/release/816938",
     "release_date": "2006-11-00",
     "spotify_id": "4goewY4kv7GWXLyD3KINHX",
-    "spotify_url": "https://open.spotify.com/album/4goewY4kv7GWXLyD3KINHX"
+    "spotify_url": "https://open.spotify.com/album/4goewY4kv7GWXLyD3KINHX",
+    "discogs_tracks": [
+      "Open The Gate",
+      "Important News",
+      "Smack The Power Up",
+      "Psycosmic Sound",
+      "Katyushka",
+      "I Volume",
+      "Title War",
+      "Avanero Spice",
+      "Stereo Crystal",
+      "Source Of Life"
+    ]
   },
   "79294": {
     "discogs_id": 619214,
     "discogs_url": "https://www.discogs.com/release/619214",
     "release_date": "2006-01-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Mario Bross.",
+      "In The Hall Of The Mountain King",
+      "Technology",
+      "Maybe You Are",
+      "Blues Mystery",
+      "Hypnotic Spider",
+      "CDx4",
+      "I Am Old, Child",
+      "Mechanic Dream"
+    ]
   },
   "89469": {
     "discogs_id": 705843,
     "discogs_url": "https://www.discogs.com/release/705843",
     "release_date": "2006-05-00",
     "spotify_id": "15RhL3vWbEZ5TBzseCPGnA",
-    "spotify_url": "https://open.spotify.com/album/15RhL3vWbEZ5TBzseCPGnA"
+    "spotify_url": "https://open.spotify.com/album/15RhL3vWbEZ5TBzseCPGnA",
+    "discogs_tracks": [
+      "Fallen",
+      "Pass Away",
+      "The Hunt",
+      "Mr. Nice",
+      "America's First",
+      "Enemy",
+      "Protocol",
+      "Glitch",
+      "Devidien (Album Version)"
+    ]
   },
   "62163": {
     "discogs_id": 448510,
@@ -391,14 +990,38 @@
     "release_date": "2005-04-00",
     "asin": null,
     "spotify_id": "3zhtig08U2v7UIaxUV4DAI",
-    "spotify_url": "https://open.spotify.com/album/3zhtig08U2v7UIaxUV4DAI"
+    "spotify_url": "https://open.spotify.com/album/3zhtig08U2v7UIaxUV4DAI",
+    "discogs_tracks": [
+      "Aum",
+      "In The Shadow",
+      "Battle Angel",
+      "KamaKazi",
+      "Pure Evil",
+      "BigBamBoom",
+      "If I Only Had A Brain",
+      "Glossolalia",
+      "Black Dawn",
+      "Cacao In For 6 1/2",
+      "Closing Prayer"
+    ]
   },
   "48140": {
     "discogs_id": 342066,
     "discogs_url": "https://www.discogs.com/release/342066",
     "release_date": "2004-10-00",
     "spotify_id": "0ygEAg4v9SHdsrAwGpooHy",
-    "spotify_url": "https://open.spotify.com/album/0ygEAg4v9SHdsrAwGpooHy"
+    "spotify_url": "https://open.spotify.com/album/0ygEAg4v9SHdsrAwGpooHy",
+    "discogs_tracks": [
+      "To Be Continued...",
+      "People Of The Light",
+      "Legion Of Angels",
+      "Trip To Melbourne",
+      "Same Planet",
+      "Unreal Vibrations",
+      "Smoky Land",
+      "Do It !",
+      "High Octane"
+    ]
   },
   "69719": {
     "discogs_id": null,
@@ -413,84 +1036,219 @@
     "discogs_url": "https://www.discogs.com/release/486867",
     "release_date": "2005-07-00",
     "spotify_id": "3X8TqqaP36cfQi7S4KzKL3",
-    "spotify_url": "https://open.spotify.com/album/3X8TqqaP36cfQi7S4KzKL3"
+    "spotify_url": "https://open.spotify.com/album/3X8TqqaP36cfQi7S4KzKL3",
+    "discogs_tracks": [
+      "Russian Gangsters",
+      "Element",
+      "Demons Halo",
+      "Skydance (Rmx)",
+      "Snarling Zraw",
+      "Acceleration",
+      "1 Day",
+      "Systec",
+      "Above The Ground"
+    ]
   },
   "66356": {
     "discogs_id": 482135,
     "discogs_url": "https://www.discogs.com/release/482135",
     "release_date": "2005-07-04",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Un:Balanced",
+      "Planet X",
+      "Northern Lights (GMS Remix)",
+      "Shakawkaw (Vibe Tribe Remix)",
+      "Dance FX",
+      "Cellophane (Sub6 & Domestic Remix)",
+      "Time Stops",
+      "Awake",
+      "Lucid Dreams",
+      "Master System"
+    ]
   },
   "100717": {
     "discogs_id": 847630,
     "discogs_url": "https://www.discogs.com/release/847630",
     "release_date": "2006-11-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "G-Mini Click",
+      "Subinya",
+      "Past Progressive",
+      "Engines On",
+      "In Rage",
+      "Elastic Mood",
+      "Sun Dance",
+      "1 Missed Call",
+      "Long Cut",
+      "Wired"
+    ]
   },
   "74054": {
     "discogs_id": 552403,
     "discogs_url": "https://www.discogs.com/release/552403",
     "release_date": "2005-10-24",
     "spotify_id": "4V6GHe3obyU1aGoEKbxoFg",
-    "spotify_url": "https://open.spotify.com/album/4V6GHe3obyU1aGoEKbxoFg"
+    "spotify_url": "https://open.spotify.com/album/4V6GHe3obyU1aGoEKbxoFg",
+    "discogs_tracks": [
+      "Vicious Cycles",
+      "Push Me Up",
+      "Cop Thing",
+      "Need For Lead",
+      "Rebellion",
+      "On The Edge",
+      "Awaken",
+      "Kiss The Sound",
+      "X-Per-Minute",
+      "Skylines Remix"
+    ]
   },
   "104358": {
     "discogs_id": 877347,
     "discogs_url": "https://www.discogs.com/release/877347",
     "release_date": "2007-01-04",
     "spotify_id": "1sDPLCHLa0A8QN4Y4ZptEE",
-    "spotify_url": "https://open.spotify.com/album/1sDPLCHLa0A8QN4Y4ZptEE"
+    "spotify_url": "https://open.spotify.com/album/1sDPLCHLa0A8QN4Y4ZptEE",
+    "discogs_tracks": [
+      "Arcadia Magik",
+      "One Cell Short Of A Brain",
+      "Drug Sock",
+      "The Logic Of The Polyphonic",
+      "9th-(The Man Who Swam Through A Speaker)",
+      "Soma",
+      "Oz",
+      "Cherry Pie"
+    ]
   },
   "56179": {
     "discogs_id": 385786,
     "discogs_url": "https://www.discogs.com/release/385786",
     "release_date": "2005-02-00",
     "spotify_id": "2SiQ0zBeNI1kvYrhZyzgfB",
-    "spotify_url": "https://open.spotify.com/album/2SiQ0zBeNI1kvYrhZyzgfB"
+    "spotify_url": "https://open.spotify.com/album/2SiQ0zBeNI1kvYrhZyzgfB",
+    "discogs_tracks": [
+      "Celebrate",
+      "El Alma Escondida",
+      "Adam's Love",
+      "The Fly Of The Phoenix Over The Natraj",
+      "Question Without An Answer",
+      "Sweet Planet",
+      "Bes Dance",
+      "Human Oddity"
+    ]
   },
   "72627": {
     "discogs_id": 998806,
     "discogs_url": "https://www.discogs.com/release/998806",
     "release_date": "2007-02-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Funky Fish (Planet B.E.N. & Chemical Trolls RMX)",
+      "My Box",
+      "Intelligence",
+      "Tokyo Synergy",
+      "Laundry Room",
+      "Synthetic Huminize",
+      "Electricity",
+      "Digital Meltdown",
+      "Electric Scream (RMX)",
+      "The Real Thing"
+    ]
   },
   "61271": {
     "discogs_id": 449440,
     "discogs_url": "https://www.discogs.com/release/449440",
     "release_date": "2005-04-00",
     "spotify_id": "58b4z4140qU9l6QR2W50jZ",
-    "spotify_url": "https://open.spotify.com/album/58b4z4140qU9l6QR2W50jZ"
+    "spotify_url": "https://open.spotify.com/album/58b4z4140qU9l6QR2W50jZ",
+    "discogs_tracks": [
+      "Clean",
+      "Straight",
+      "Tool Time",
+      "Persia",
+      "Conqueror",
+      "Into The System",
+      "Intergalactic",
+      "Traditions"
+    ]
   },
   "107082": {
     "discogs_id": 928649,
     "discogs_url": "https://www.discogs.com/release/928649",
     "release_date": "2007-03-00",
     "spotify_id": "5AUODJQ9Wg1nWxgQHNaYfO",
-    "spotify_url": "https://open.spotify.com/album/5AUODJQ9Wg1nWxgQHNaYfO"
+    "spotify_url": "https://open.spotify.com/album/5AUODJQ9Wg1nWxgQHNaYfO",
+    "discogs_tracks": [
+      "Feel Life",
+      "Spirit Of The Wind",
+      "Dreams Of Heaven",
+      "It's All About Her",
+      "Tomerik Trick",
+      "What A Day",
+      "Electric Shocking Dub",
+      "Bed Time Story",
+      "Step Ina Rasta Step",
+      "Roots Of Passion",
+      "In The End Of My Day",
+      "Vibe Of Tribe"
+    ]
   },
   "70552": {
     "discogs_id": 490914,
     "discogs_url": "https://www.discogs.com/release/490914",
     "release_date": "2005-07-26",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Nordic Nature",
+      "Sleepwalker",
+      "Walking In Circles",
+      "Muzzic",
+      "PsychoWhiteChocolateDiscoDeluxe",
+      "Phunky People",
+      "Wundersch\u00f6n",
+      "Moxjo Depth",
+      "Higher Zones"
+    ]
   },
   "58184": {
     "discogs_id": 421310,
     "discogs_url": "https://www.discogs.com/release/421310",
     "release_date": "2005-03-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Northern Lights",
+      "Beams Of The Light",
+      "Headed For Infinity",
+      "High Gear",
+      "Anti Gravity",
+      "Sirius",
+      "Machines Job",
+      "Cyber Hiker",
+      "Substance"
+    ]
   },
   "60944": {
     "discogs_id": 66363,
     "discogs_url": "https://www.discogs.com/release/66363",
     "release_date": "1998-03-16",
     "spotify_id": "3EuwfjrNiB4R8mVgROM2Lf",
-    "spotify_url": "https://open.spotify.com/album/3EuwfjrNiB4R8mVgROM2Lf"
+    "spotify_url": "https://open.spotify.com/album/3EuwfjrNiB4R8mVgROM2Lf",
+    "discogs_tracks": [
+      "Perfect Stranger",
+      "Flight Or Fight",
+      "Turtle Beach",
+      "Ghostrider (Time Tunnel Remix)",
+      "Shockwave",
+      "Nostradamus (The Prophecy Remix)",
+      "Bad News (New Way)",
+      "Mushroom Symphony"
+    ]
   },
   "94495": {
     "discogs_id": 1877843,
@@ -498,7 +1256,18 @@
     "release_date": "2006-07-00",
     "asin": null,
     "spotify_id": "5qvdEgMJBk64y4C9RYTCWh",
-    "spotify_url": "https://open.spotify.com/album/5qvdEgMJBk64y4C9RYTCWh"
+    "spotify_url": "https://open.spotify.com/album/5qvdEgMJBk64y4C9RYTCWh",
+    "discogs_tracks": [
+      "The Way In",
+      "Senorina",
+      "Over Act",
+      "Quemical Generation",
+      "Abstraction",
+      "Chromatic Scale",
+      "Be Honest To Yourself",
+      "Ying VS Yang",
+      "Liquid Frequency"
+    ]
   },
   "60790": {
     "discogs_id": 446208,
@@ -506,7 +1275,18 @@
     "release_date": "2005-04-00",
     "asin": null,
     "spotify_id": "5f7qUlgexO2wgy83GY9CBj",
-    "spotify_url": "https://open.spotify.com/album/5f7qUlgexO2wgy83GY9CBj"
+    "spotify_url": "https://open.spotify.com/album/5f7qUlgexO2wgy83GY9CBj",
+    "discogs_tracks": [
+      "Participate In The X-Periment",
+      "Who The DJ Is?",
+      "Better-Fly",
+      "Toxic Part Of Town",
+      "Face It",
+      "Politically Correct",
+      "Bluetooth Generation",
+      "Wonderland",
+      "Outro Electro"
+    ]
   },
   "105528": {
     "discogs_id": 899945,
@@ -514,14 +1294,36 @@
     "release_date": "2007-02-00",
     "asin": "B000N8UWN4",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Space Taste",
+      "Nonsense",
+      "Autoplay",
+      "Deceptive Noises",
+      "Rebirth (Aerospace Remix)",
+      "Mano Mono",
+      "Visuals",
+      "So Long"
+    ]
   },
   "135999": {
     "discogs_id": 1356232,
     "discogs_url": "https://www.discogs.com/release/1356232",
     "release_date": "2008-05-22",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "All In",
+      "Visionary",
+      "Blade (PTX Remix)",
+      "Off The Record",
+      "Terra Soul",
+      "The Edge",
+      "Unbelievable",
+      "Automatix (PTX Remix)",
+      "Test Me",
+      "Alufa"
+    ]
   },
   "103146": {
     "discogs_id": 888441,
@@ -529,7 +1331,19 @@
     "release_date": "2007-01-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "I Dose",
+      "Clear Test Signal",
+      "I Am A Robot",
+      "Proton Pump",
+      "L.S.D. Came Falling Down",
+      "When You Mix",
+      "Fusic",
+      "Synergy",
+      "Surreal Expansion",
+      "Kreak Part 2"
+    ]
   },
   "91751": {
     "discogs_id": 733109,
@@ -537,21 +1351,49 @@
     "release_date": "2006-06-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Forever Nights",
+      "Diamond In The Rough (Perfect Stranger Edit)",
+      "Psycho",
+      "Feelin' Electro (Valentino Kanzyani Remix)",
+      "Outside",
+      "Collectiv Energy",
+      "Breeze",
+      "Inside The Box"
+    ]
   },
   "54870": {
     "discogs_id": 389531,
     "discogs_url": "https://www.discogs.com/release/389531",
     "release_date": "2005-01-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Old School",
+      "Wrong Answer",
+      "Let The Music",
+      "Wonderland (Album Version)",
+      "Caution!",
+      "Banana Banji",
+      "Break Dance",
+      "Make Me Shake",
+      "Total Madness",
+      "Emotion In Motion"
+    ]
   },
   "41234": {
     "discogs_id": 310501,
     "discogs_url": "https://www.discogs.com/release/310501",
     "release_date": "2004-08-00",
     "spotify_id": "4PIVEOyBjrMd3Efe461rbA",
-    "spotify_url": "https://open.spotify.com/album/4PIVEOyBjrMd3Efe461rbA"
+    "spotify_url": "https://open.spotify.com/album/4PIVEOyBjrMd3Efe461rbA",
+    "discogs_tracks": [
+      "Coolio",
+      "Techno Widows",
+      "Coolio (Infected Mushroom Rmx)",
+      "Eye To Eye (GMS Rmx)"
+    ]
   },
   "64530": {
     "discogs_id": 477481,
@@ -559,7 +1401,17 @@
     "release_date": "2005-06-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Kilimanjaro (Roy Mix)",
+      "Hypnotist",
+      "Mystical Sound",
+      "Xpend You",
+      "Fly High",
+      "Going Crazy",
+      "Sticky Fingers",
+      "Hypernova"
+    ]
   },
   "111862": {
     "discogs_id": 1006302,
@@ -567,13 +1419,32 @@
     "release_date": "2007-06-00",
     "asin": null,
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "Lifetime",
+      "Hammer & Tongs",
+      "Cordi",
+      "Symbiosis",
+      "Slope Point",
+      "Crystal Clear",
+      "Slag",
+      "Complex",
+      "Suppress You"
+    ]
   },
   "65248": {
     "discogs_id": 479750,
     "discogs_url": "https://www.discogs.com/release/479750",
     "release_date": "2005-06-00",
     "spotify_id": null,
-    "spotify_url": null
+    "spotify_url": null,
+    "discogs_tracks": [
+      "7th Son (Andr\u00e9 Absolut Remix)",
+      "7th Son (Fitalic Remix)",
+      "7th Son (Klangstrahler Projekt Remix)",
+      "7th Son (Ticon Remix)",
+      "7th Son (FREq Remix)",
+      "7th Son"
+    ]
   }
 }
