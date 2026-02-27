@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Dark background -->
+  <rect width="32" height="32" fill="#15100a"/>
+  <!-- Outer gold border -->
+  <rect x="1" y="1" width="30" height="30" fill="none" stroke="#9a7820" stroke-width="0.8"/>
+  <!-- Top accent bar (mirrors artifact card design) -->
+  <rect x="1" y="1" width="30" height="2.5" fill="#9a7820" opacity="0.85"/>
+  <!-- GCA initials -->
+  <text x="16" y="23"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="15"
+        font-weight="bold"
+        fill="#d4a82a"
+        letter-spacing="0.5">GCA</text>
+</svg>
