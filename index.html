@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Guy Cohen Archive — A Digital Archaeological Exhibition</title>
-  <meta name="description" content="Three surviving fragments from forum.isratrance.com — the complete known writings of guy cohen, Senior Member, recovered and preserved as digital artifacts.">
+  <meta name="description" content="Four surviving fragments from forum.isratrance.com — the complete known original writings of guy cohen, IsraTrance Senior Member, recovered and preserved as digital artifacts.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
@@ -16,14 +16,11 @@
       --bg:        #060403;
       --stone:     #15100d;
       --stone-mid: #1e1712;
-      --stone-hi:  #2c211a;
       --gold:      #c9a84c;
       --gold-dim:  #8a6e2f;
       --gold-pale: #e8d090;
       --parchment: #d4c4a0;
       --dust:      #9a8870;
-      --shadow:    rgba(0,0,0,0.8);
-      --glow:      rgba(201,168,76,0.18);
     }
 
     html { scroll-behavior: smooth; }
@@ -38,7 +35,7 @@
       overflow-x: hidden;
     }
 
-    /* Noise overlay */
+    /* Grain */
     body::before {
       content: '';
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
@@ -80,23 +77,17 @@
     .hero-title {
       font-family: 'Cinzel Decorative', serif;
       font-size: clamp(2.2rem, 6vw, 4.8rem);
-      font-weight: 700;
-      color: var(--gold-pale);
-      letter-spacing: 0.06em;
-      line-height: 1.2;
-      text-shadow:
-        0 0 40px rgba(201,168,76,0.35),
-        0 2px 8px rgba(0,0,0,0.9);
+      font-weight: 700; color: var(--gold-pale);
+      letter-spacing: 0.06em; line-height: 1.2;
+      text-shadow: 0 0 40px rgba(201,168,76,0.35), 0 2px 8px rgba(0,0,0,0.9);
       margin-bottom: 0.5rem;
     }
 
     .hero-subtitle {
       font-family: 'Cinzel', serif;
       font-size: clamp(0.72rem, 1.8vw, 0.95rem);
-      letter-spacing: 0.28em;
-      color: var(--gold-dim);
-      text-transform: uppercase;
-      margin-bottom: 3rem;
+      letter-spacing: 0.28em; color: var(--gold-dim);
+      text-transform: uppercase; margin-bottom: 3rem;
     }
 
     .hero-desc {
@@ -112,14 +103,14 @@
       color: var(--gold-dim); text-transform: uppercase;
       animation: pulse 2.5s ease-in-out infinite;
     }
-    .hero-scroll::after { content: '↓'; font-size: 1.2rem; color: var(--gold-dim); }
+    .hero-scroll::after { content: '↓'; font-size: 1.2rem; }
 
     @keyframes pulse {
       0%, 100% { opacity: 0.4; }
       50%       { opacity: 1; }
     }
 
-    /* ── DIVIDER ── */
+    /* ── SECTION HEADER ── */
     .section-divider {
       position: relative; z-index: 1;
       display: flex; align-items: center; justify-content: center;
@@ -130,21 +121,42 @@
       color: var(--gold-dim); text-transform: uppercase; white-space: nowrap;
     }
     .section-divider::before,
-    .section-divider::after {
-      content: ''; flex: 1; max-width: 280px; height: 1px;
-    }
+    .section-divider::after { content: ''; flex: 1; max-width: 280px; height: 1px; }
     .section-divider::before { background: linear-gradient(90deg, transparent, var(--gold-dim)); }
     .section-divider::after  { background: linear-gradient(90deg, var(--gold-dim), transparent); }
+
+    /* ── BETWEEN-ARTIFACT SEPARATOR ── */
+    .artifact-sep {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: center;
+      gap: 1.2rem; padding: 0 1.5rem; margin: 5rem 0 0;
+    }
+    .artifact-sep::before,
+    .artifact-sep::after {
+      content: ''; flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.18), transparent);
+    }
+    .artifact-sep-mark {
+      display: flex; align-items: center; gap: 0.6rem;
+      color: rgba(138,110,47,0.45);
+    }
+    .artifact-sep-mark::before,
+    .artifact-sep-mark::after { content: '—'; font-size: 0.7rem; }
+    .artifact-sep-icon {
+      font-size: 0.6rem; letter-spacing: 0.15em;
+      font-family: 'Cinzel', serif; color: rgba(138,110,47,0.45);
+    }
 
     /* ── EXHIBITION ── */
     .exhibition {
       position: relative; z-index: 1;
       max-width: 960px; margin: 0 auto; padding: 0 1.5rem 8rem;
-      display: flex; flex-direction: column; gap: 8rem;
     }
 
     /* ── ARTIFACT ── */
-    .artifact { position: relative; }
+    .artifact { position: relative; margin-top: 5rem; }
+    .artifact:first-child { margin-top: 0; }
 
     .artifact-case {
       position: relative;
@@ -156,19 +168,12 @@
         0 0 80px rgba(201,168,76,0.04),
         inset 0 1px 0 rgba(201,168,76,0.12),
         inset 0 -1px 0 rgba(0,0,0,0.5);
-      border-radius: 2px;
-      overflow: hidden;
+      border-radius: 2px; overflow: hidden;
     }
     .artifact-case::before {
       content: '';
       position: absolute; top: 0; left: 0; right: 0; height: 2px;
       background: linear-gradient(90deg, transparent 0%, var(--gold-dim) 30%, var(--gold) 50%, var(--gold-dim) 70%, transparent 100%);
-    }
-    .artifact-case::after {
-      content: '';
-      position: absolute; inset: 0; pointer-events: none;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.015' numOctaves='3' seed='8' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
-      opacity: 0.6; mix-blend-mode: overlay;
     }
 
     .artifact-inner { padding: 3rem 3.5rem 2.5rem; position: relative; }
@@ -178,7 +183,7 @@
       font-family: 'Cinzel', serif; font-size: 0.6rem; letter-spacing: 0.4em;
       color: var(--gold-dim); text-transform: uppercase;
       background: var(--bg); padding: 0.3rem 1rem;
-      border: 1px solid rgba(201,168,76,0.15);
+      border: 1px solid rgba(201,168,47,0.15);
     }
 
     /* ── ALBUM COVER ── */
@@ -188,9 +193,7 @@
     }
 
     .album-cover-frame {
-      position: relative;
-      display: inline-block;
-      padding: 8px;
+      position: relative; display: inline-block; padding: 8px;
       background: linear-gradient(135deg, #2a1f14, #1a1208, #2a1f14);
       box-shadow:
         0 0 0 1px rgba(201,168,76,0.25),
@@ -198,27 +201,12 @@
         inset 0 1px 0 rgba(201,168,76,0.2),
         inset 0 -1px 0 rgba(0,0,0,0.4);
     }
-
     .album-cover-frame::before {
       content: '';
       position: absolute; inset: 4px;
       border: 1px solid rgba(201,168,76,0.15);
       pointer-events: none; z-index: 1;
     }
-
-    .album-cover {
-      display: block;
-      width: 200px; height: 200px;
-      object-fit: cover;
-      filter: sepia(0.25) contrast(1.08) brightness(0.88);
-      transition: filter 0.5s ease;
-    }
-
-    .album-cover:hover {
-      filter: sepia(0) contrast(1.05) brightness(0.95);
-    }
-
-    /* overlay aging effect */
     .album-cover-frame::after {
       content: '';
       position: absolute; inset: 8px;
@@ -226,43 +214,48 @@
       pointer-events: none; z-index: 2;
     }
 
+    .album-cover {
+      display: block; width: 200px; height: 200px; object-fit: cover;
+      filter: sepia(0.25) contrast(1.08) brightness(0.88);
+      transition: filter 0.5s ease;
+    }
+    .album-cover:hover { filter: sepia(0) contrast(1.05) brightness(0.95); }
+
     .cover-caption {
-      margin-top: 1rem;
-      font-family: 'Cinzel', serif;
+      margin-top: 1rem; font-family: 'Cinzel', serif;
       font-size: 0.55rem; letter-spacing: 0.3em;
       color: var(--gold-dim); text-transform: uppercase; text-align: center;
     }
 
-    /* ── MAJOR ARTIFACT layout: image left, content right ── */
+    /* ── MAJOR ARTIFACT: side-by-side layout ── */
     .artifact--major .artifact-inner {
       display: grid;
       grid-template-columns: 260px 1fr;
       grid-template-rows: auto auto;
       gap: 0 3rem;
     }
-
     .artifact--major .artifact-cover {
-      grid-column: 1;
-      grid-row: 1 / 3;
-      margin-bottom: 0;
-      align-self: start;
-      padding-top: 0.5rem;
+      grid-column: 1; grid-row: 1 / 3;
+      margin-bottom: 0; align-self: start; padding-top: 0.5rem;
     }
-
     .artifact--major .album-cover { width: 240px; height: 240px; }
+    .artifact--major .artifact-header { grid-column: 2; grid-row: 1; }
+    .artifact--major .artifact-content { grid-column: 2; grid-row: 2; }
 
-    .artifact--major .artifact-header {
-      grid-column: 2; grid-row: 1;
+    /* ── MAJOR CASE GLOW ── */
+    .artifact--major .artifact-case {
+      border-color: rgba(201,168,76,0.3);
+      box-shadow:
+        0 0 0 1px rgba(201,168,76,0.08),
+        0 0 60px rgba(0,0,0,0.7),
+        0 0 120px rgba(201,168,76,0.07),
+        inset 0 1px 0 rgba(201,168,76,0.2),
+        inset 0 -1px 0 rgba(0,0,0,0.5);
     }
 
-    .artifact--major .artifact-content {
-      grid-column: 2; grid-row: 2;
-    }
-
-    /* ── ARTIFACT HEADER ── */
+    /* ── HEADER ── */
     .artifact-header {
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
+      margin-bottom: 2rem; padding-bottom: 1.5rem;
       border-bottom: 1px solid rgba(201,168,76,0.1);
     }
 
@@ -270,13 +263,11 @@
       font-family: 'Cinzel', serif;
       font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       font-weight: 600; color: var(--gold-pale);
-      letter-spacing: 0.04em; line-height: 1.4;
-      margin-bottom: 0.8rem;
+      letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 0.8rem;
     }
     .artifact--major .artifact-subject { font-size: clamp(0.95rem, 3vw, 1.35rem); }
 
     .artifact-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; }
-
     .meta-item { display: flex; flex-direction: column; gap: 0.15rem; }
     .meta-label {
       font-family: 'Cinzel', serif; font-size: 0.52rem;
@@ -284,10 +275,10 @@
     }
     .meta-value { font-size: 0.88rem; color: var(--dust); }
 
-    /* ── POST BODY ── */
+    /* ── BODY ── */
     .artifact-body {
-      color: var(--parchment); font-size: 1.05rem; line-height: 1.85; font-weight: 300;
-      white-space: pre-wrap;
+      color: var(--parchment); font-size: 1.05rem; line-height: 1.85;
+      font-weight: 300; white-space: pre-wrap;
     }
     .artifact-body a {
       color: var(--gold-dim); text-decoration: none;
@@ -299,8 +290,7 @@
     /* ── TRACK LIST ── */
     .track-list {
       list-style: none; margin: 1.5rem 0;
-      border-left: 2px solid rgba(201,168,76,0.15);
-      padding-left: 1.5rem;
+      border-left: 2px solid rgba(201,168,76,0.15); padding-left: 1.5rem;
     }
     .track-list li {
       padding: 0.3rem 0; font-size: 1rem; color: var(--parchment);
@@ -312,8 +302,8 @@
       color: var(--gold-dim); margin-right: 0.8rem; letter-spacing: 0.1em;
     }
     .track-note {
-      display: block; font-style: italic; font-size: 0.9rem; color: var(--dust);
-      padding: 0.3rem 0 0.5rem; line-height: 1.6;
+      display: block; font-style: italic; font-size: 0.9rem;
+      color: var(--dust); padding: 0.3rem 0 0.5rem; line-height: 1.6;
     }
 
     /* ── FRAGMENT NOTE ── */
@@ -321,17 +311,6 @@
       font-style: italic; color: var(--dust); font-size: 0.88rem;
       margin-top: 1.2rem; padding: 0.8rem 1.2rem;
       border-left: 2px solid rgba(201,168,76,0.2);
-    }
-
-    /* ── MAJOR CASE GLOW ── */
-    .artifact--major .artifact-case {
-      border-color: rgba(201,168,76,0.3);
-      box-shadow:
-        0 0 0 1px rgba(201,168,76,0.08),
-        0 0 60px rgba(0,0,0,0.7),
-        0 0 120px rgba(201,168,76,0.07),
-        inset 0 1px 0 rgba(201,168,76,0.2),
-        inset 0 -1px 0 rgba(0,0,0,0.5);
     }
 
     /* ── MUSEUM LABEL ── */
@@ -377,12 +356,8 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 720px) {
-      .artifact--major .artifact-inner {
-        display: block;
-      }
-      .artifact--major .artifact-cover {
-        margin-bottom: 2rem;
-      }
+      .artifact--major .artifact-inner { display: block; }
+      .artifact--major .artifact-cover { margin-bottom: 2rem; }
       .artifact--major .album-cover { width: 180px; height: 180px; }
       .artifact-inner { padding: 2.5rem 1.5rem 2rem; }
       .museum-label { padding: 1rem 1.5rem; }
@@ -400,13 +375,14 @@
   <p class="hero-label">Digital Archaeological Exhibition &nbsp;·&nbsp; IsraTrance Music Reviews Forum &nbsp;·&nbsp; 2004–2007</p>
   <div class="hero-rule"></div>
   <h1 class="hero-title">The Guy Cohen<br>Archive</h1>
-  <p class="hero-subtitle">A Complete Record of the Known Writings</p>
+  <p class="hero-subtitle">A Complete Record of the Known Original Writings</p>
   <div class="hero-rule"></div>
   <p class="hero-desc">
-    Three fragments survive. Recovered from the ruins of a once-thriving digital agora,
-    these inscriptions represent the complete extant written legacy of the forum elder
+    Four fragments survive. Recovered from the ruins of a once-thriving digital agora,
+    these inscriptions represent the complete extant original works of the forum elder
     known only as <em>guy cohen</em> — Senior Member, Rank: 2,871 Posts, 417 Topics —
     whose voice fell silent before the servers grew cold.
+    Only those writings where he spoke first are preserved here.
   </p>
   <div class="hero-scroll" aria-label="Scroll to begin">Enter the Exhibition</div>
 </header>
@@ -415,69 +391,289 @@
 
 <main class="exhibition" role="main">
 
-  <!-- ────────── FRAGMENT I ────────── -->
+  <!-- ════════════ FRAGMENT I — VOID ════════════ -->
   <article class="artifact" id="fragment-i">
     <div class="artifact-case">
-      <div class="artifact-number">Fragment I &nbsp;·&nbsp; Circa 2004 CE</div>
+      <div class="artifact-number">Fragment I &nbsp;·&nbsp; Circa 2004 CE &nbsp;·&nbsp; The First Known Work</div>
       <div class="artifact-inner">
 
         <div class="artifact-cover">
           <div class="album-cover-frame">
-            <img
-              src="./images/12-moons-solid-state.jpg"
-              alt="12 Moons — Solid State album cover"
-              class="album-cover"
-              loading="lazy"
-            >
+            <img src="./images/void-the-punishment.jpg"
+                 alt="Void — The Punishment album cover"
+                 class="album-cover" loading="lazy">
           </div>
-          <p class="cover-caption">12 Moons — Solid State &nbsp;·&nbsp; Candyflip Records, 2004</p>
+          <p class="cover-caption">Void — The Punishment &nbsp;·&nbsp; Chemical Crew, 2004</p>
         </div>
 
         <header class="artifact-header">
-          <h2 class="artifact-subject">On the Matter of 12 Moons — Solid State (Candyflip)</h2>
+          <h2 class="artifact-subject">On the Matter of Void — The Punishment (Chemical Crew)</h2>
           <div class="artifact-meta">
             <div class="meta-item">
               <span class="meta-label">Date of Inscription</span>
-              <span class="meta-value">September 8, 2004 — 12:35</span>
+              <span class="meta-value">June 8, 2004 — 15:43</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Post Identifier</span>
-              <span class="meta-value">#377809</span>
+              <span class="meta-value">#323358</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Replies</span>
+              <span class="meta-value">88</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Views</span>
+              <span class="meta-value">10,119</span>
             </div>
           </div>
         </header>
 
-        <div class="artifact-body">For hebrew readers :
-<a href="http://layla.ynet.co.il/newLayla/magazine.asp?storyID=507" target="_blank" rel="noopener">http://layla.ynet.co.il/newLayla/magazine.asp?storyID=507</a></div>
+        <ul class="track-list" aria-label="Track listing">
+          <li><span class="track-num">01.</span>Punishment</li>
+          <li><span class="track-num">02.</span>The Master Blaster</li>
+          <li><span class="track-num">03.</span>Machine</li>
+          <li><span class="track-num">04.</span>In My Dreams</li>
+          <li><span class="track-num">05.</span>Hysterical</li>
+          <li><span class="track-num">06.</span>Energize</li>
+          <li><span class="track-num">07.</span>Hot Stuff</li>
+          <li><span class="track-num">08.</span>True Love</li>
+          <li><span class="track-num">09.</span>Time Tunnel</li>
+          <li><span class="track-num">10.</span>Dance Electric</li>
+        </ul>
 
-        <p class="artifact-fragment-note">
-          The shortest of the three recovered inscriptions. Twelve words. A gesture toward the mother tongue —
-          a reader's offering, a bridge between two worlds. The linked document has since crumbled to dust.
-          What it contained is now known only to those who were there.
-        </p>
+        <div class="artifact-body" style="margin-top:1.5rem">I want to open this review with special thanx to Tamir Regev and Oren Emanuel for this master peace...BIG RESPECT !
+I always like Void music but after this perfect album they are my favorites project !
+The album start with the track Punishment ( like the album name ) and after one minute and 20 second of emotion finally void's strong bass start and since than , there is no way to stop the madness !
+Every track and track has special melodies and bass-line. The album finish with ambient thyat I personally really like.
+I dont have special favorites , simply I like ALL the album ! and this is the only album that I can say this thing about him.
+This is one of my favorites album in all times !!
+So...thanx Void ( again ) and thanx Chemical-Crew for this release and for this price
+Feel free to add comments !</div>
 
       </div>
     </div>
     <div class="museum-label">
-      <span class="label-accession">Accession No. GC-2004-001 &nbsp;·&nbsp; Music Reviews Wing</span>
-      <span class="label-condition">Condition: Fragmentary — external reference lost</span>
+      <span class="label-accession">Accession No. GC-2004-001 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; The First Work</span>
+      <span class="label-condition">Condition: Complete — track list and general review intact</span>
     </div>
   </article>
 
-  <!-- ────────── FRAGMENT II (centrepiece) ────────── -->
+  <!-- separator -->
+  <div class="artifact-sep" aria-hidden="true">
+    <div class="artifact-sep-mark"><span class="artifact-sep-icon">· · ·</span></div>
+  </div>
+
+  <!-- ════════════ FRAGMENT II — LOUD ════════════ -->
   <article class="artifact artifact--major" id="fragment-ii">
     <div class="artifact-case">
-      <div class="artifact-number">Fragment II &nbsp;·&nbsp; Circa 2007 CE &nbsp;·&nbsp; The Great Inscription</div>
+      <div class="artifact-number">Fragment II &nbsp;·&nbsp; Circa 2006 CE</div>
       <div class="artifact-inner">
 
         <div class="artifact-cover">
           <div class="album-cover-frame">
-            <img
-              src="./images/decoy-push-button-pony.jpg"
-              alt="Decoy — Push Button Pony album cover"
-              class="album-cover"
-              loading="lazy"
-            >
+            <img src="./images/loud-some-kind-of-creativity.jpg"
+                 alt="Loud — Some Kind Of Creativity album cover"
+                 class="album-cover" loading="lazy">
+          </div>
+          <p class="cover-caption">Loud — Some Kind Of Creativity &nbsp;·&nbsp; Drive Records, 2006</p>
+        </div>
+
+        <div class="artifact-content">
+          <header class="artifact-header">
+            <h2 class="artifact-subject">On the Matter of Loud — Some Kind Of Creativity (Drive Records)</h2>
+            <div class="artifact-meta">
+              <div class="meta-item">
+                <span class="meta-label">Date of Inscription</span>
+                <span class="meta-value">December 5, 2006 — 18:12</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Post Identifier</span>
+                <span class="meta-value">#1018813</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Replies</span>
+                <span class="meta-value">60</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Views</span>
+                <span class="meta-value">8,011</span>
+              </div>
+            </div>
+          </header>
+
+          <div class="artifact-body">Hi All !
+Loud project is release debut album — Some Kind Of Creativity — on their home label Drive Records. The names behind this project are Eitan Reiter &amp; Kobi Toledano, both from Israel. After many successful releases on different compilations, they finally present the full uplifting album !!
+The name of the album is gives a little clue about the music, so I hope you all ready to start the trip...</div>
+
+          <ul class="track-list" aria-label="Track-by-track commentary">
+            <li>
+              <span class="track-num">01.</span>G-mini-click
+              <span class="track-note">The introduction of the first track is a psychedelic piano, which leads the track for some hallucinate places with mysterious atmosphere. The track is kind of tech-full on or something on this direction, this is not just a cheezy full on for sure. "G-mini-click" is developing smartly and gives us, the listeners, a tasty begining for the album.</span>
+            </li>
+            <li>
+              <span class="track-num">02.</span>Subinya
+              <span class="track-note">The second track is more groovy and danceable if you compare it to the first one. "Subinya" is a deep full on track with some strange vibes on the air — the track is not exploding on the beging, it is just built well gradually untill the bomb. All those effects around are add so much to the track's feeling by confuse the listener all the time.</span>
+            </li>
+            <li>
+              <span class="track-num">03.</span>Past Progressive
+              <span class="track-note">Now Koby &amp; Eitan show us their progressive steps. Be prepare people — this progy is not as usuall, this is a combination between shady progy with the deep full on. I don't know how they did it, but this guys just created a new fresh style following by elements from different types of music. "Past progressive" is full of madness moments like the up start from 04:30. Good work here.</span>
+            </li>
+            <li>
+              <span class="track-num">04.</span>Engine On
+              <span class="track-note">After heavy begining for this album, the fourth tune is more "open" and gentle. "Engine on" is actually a fine collection of soft beats with comfortable atmosphere. I really liked the female vocals, which turn the track for his softer side.</span>
+            </li>
+            <li>
+              <span class="track-num">05.</span>In Rage
+              <span class="track-note">This specific track remind of the old &amp; gold music of Cosma (RIP)...music with so much soul and emotions, so simple and enjoyalbe. All the definitions are useless in this case, lets call it just — MUSIC. "In rage" is not track with unforgettable brake or something like that, this is just a pure psychedelic tune with some serious influence on the brain...</span>
+            </li>
+            <li>
+              <span class="track-num">06.</span>Elastic Mood
+              <span class="track-note">What a beautiful intro for this track...and the continuance even more finer. I'm look for words to explaing the readers what I'm hearing in the track, but can't do it. "Elastic mood" is track with big story beyond. The connection between all those tones is really impressive and addicted. The last three minutes are so fascinating...this is simply a delightful track !!!</span>
+            </li>
+            <li>
+              <span class="track-num">07.</span>Sun Dance
+              <span class="track-note">Let the groove talk. Loud guys tried to return the old days, when the music was not begin with full power and keep that way all over the track...their music are bring a new message of true spirit &amp; freedom and honest pleasure. If you want taste a goa-full on track, give a listening for "Sun dance" track.</span>
+            </li>
+            <li>
+              <span class="track-num">08.</span>1 Missed Call
+              <span class="track-note">"1 missed call" is a funky track with some funny games and positive vibes. I did not connect immediately to this track like the tracks before, but after few listens I found it very nice one.</span>
+            </li>
+            <li>
+              <span class="track-num">09.</span>Long Cut
+              <span class="track-note">Where the hell this track came from?! The unclear style of Kobi &amp; Eitan is just so colorful and varied, you can't expect the continuation, just suprise again and again. The kick here is flat and blurry, and all the events around force the listener to flow for unknown area — "noise with meaning".</span>
+            </li>
+            <li>
+              <span class="track-num">10.</span>Wired
+              <span class="track-note">"Wired" is the track which leads this amazing trip for the end. Like the name, the music is not so clear...kind of freestlye tune of creative minds with strong desire for more...too bad it ending already...now we must back to the regular reality.</span>
+            </li>
+          </ul>
+
+          <div class="artifact-body" style="margin-top:1.5rem">If you ask me, this album is a revolutionary. The speical music inside is defnitely not something we hear frequently, especially not from Israely artists. Loud are stand behind their promise to produce creativity materials with personal touch.
+
+"Some Kind Of Creativity" album is available here:
+<a href="http://www.psyshop.com/shop/CDs/dri/dri1cd001.html" target="_blank" rel="noopener">http://www.psyshop.com/shop/CDs/dri/dri1cd001.html</a></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="museum-label">
+      <span class="label-accession">Accession No. GC-2006-001 &nbsp;·&nbsp; Music Reviews Wing</span>
+      <span class="label-condition">Condition: Complete — ten sub-inscriptions intact</span>
+    </div>
+  </article>
+
+  <!-- separator -->
+  <div class="artifact-sep" aria-hidden="true">
+    <div class="artifact-sep-mark"><span class="artifact-sep-icon">· · ·</span></div>
+  </div>
+
+  <!-- ════════════ FRAGMENT III — PROMETHEUS ════════════ -->
+  <article class="artifact artifact--major" id="fragment-iii">
+    <div class="artifact-case">
+      <div class="artifact-number">Fragment III &nbsp;·&nbsp; Circa 2007 CE</div>
+      <div class="artifact-inner">
+
+        <div class="artifact-cover">
+          <div class="album-cover-frame">
+            <img src="./images/prometheus-corridor-of-mirrors.jpg"
+                 alt="Prometheus — Corridor Of Mirrors album cover"
+                 class="album-cover" loading="lazy">
+          </div>
+          <p class="cover-caption">Prometheus — Corridor Of Mirrors &nbsp;·&nbsp; Twisted Records, 2007</p>
+        </div>
+
+        <div class="artifact-content">
+          <header class="artifact-header">
+            <h2 class="artifact-subject">On the Matter of Prometheus — Corridor Of Mirrors (Twisted Records)</h2>
+            <div class="artifact-meta">
+              <div class="meta-item">
+                <span class="meta-label">Date of Inscription</span>
+                <span class="meta-value">February 14, 2007 — 14:07</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Post Identifier</span>
+                <span class="meta-value">#1061393</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Replies</span>
+                <span class="meta-value">66</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Views</span>
+                <span class="meta-value">38,824</span>
+              </div>
+            </div>
+          </header>
+
+          <div class="artifact-body">Hi All !
+Benji Vaughn AKA Prometheus was not so famous and appricated untill he suprised the whole world with the album "Robot-o-Chan" on 2004. Suddenly, every psytrance fan know this project and respect it. Now, almost three years after the debut album, Benji is back with full-length album called "Corridor Of Mirrors". Twisted Records is proudly to present the latest materials of this talented guy and we need to check what is the new message that Prometheus is bring with him.</div>
+
+          <ul class="track-list" aria-label="Track-by-track commentary">
+            <li>
+              <span class="track-num">01.</span>Arcadia Magik
+              <span class="track-note">Benji is let us taste the unique style he developed over the years and now it's sound better than ever. Two and half minutes of stirring opening and than the trip is starts officialy. His own line is so sensed here and all the supported elements around just add more colors to the track. The first track is surely give the listener a good impression for the upcoming sounds.</span>
+            </li>
+            <li>
+              <span class="track-num">02.</span>One Cell Short Of A Brain
+              <span class="track-note">The ability of this project to create a psychedelic atmosphere everytime is just astonishment. The flat kick with the right playings background, make it sound like an adventure story. I hope your brains is strong enough for get to the third tune. Be aware — the story just get more and more complicated.</span>
+            </li>
+            <li>
+              <span class="track-num">03.</span>Drug Sock
+              <span class="track-note">The vocal on the begining gives us a little clue for the rest of the track. "Drug Sock" tune is more deep and soft with the requied elements for full attention by the listener. The tension vibes just go up and up and thats force you to listen it well without missing anything, AMAZING. The hallucinate experience is continue...</span>
+            </li>
+            <li>
+              <span class="track-num">04.</span>The Logic Of The Polyphonic
+              <span class="track-note">Track number four is start with lovely robotic sample following by melodies-storm. The style here is modern and updated, even sound close to the full on genre, but much more high quality. This tune has a clear target — to shake the body seriously without leaving the brain's work. Every effect is founded on the right place and thats why it's sound so proffesional. The beautiful melody on the middle brake simply confused me totally.</span>
+            </li>
+            <li>
+              <span class="track-num">05.</span>9th (The Man Who Swam Through A Speaker)
+              <span class="track-note">The classical-music fans will recognize the symphony on the beginging — yes, Beethoven is the right answer. This dance floor stomper is one of the best Benji's tracks ever in my opinion. The atmosphere is one of kind so as the all flow of the track. The genious symphony is coming back after five brilliant minutes and takes the track far away...this creative mind is always leave me speacless.</span>
+            </li>
+            <li>
+              <span class="track-num">06.</span>Soma
+              <span class="track-note">"Soma" track is a gift for all the stoned brains. The plot is starting chilly and slowly growing to the highlight. This tune has not connect with the dance floor, but it's a master-piece for the hallucinate brains — a long &amp; intersting trip to unknown zone. "Soma is poetry..."</span>
+            </li>
+            <li>
+              <span class="track-num">07.</span>Oz
+              <span class="track-note">The bombs is gone and we can recover with "Oz" tune. The fat kick, flowing baseline and the soft riff is the best solution for let the brain understand what is happened here before and go on. The tempo is low and friendly, so as the funk influences, which combined fine.</span>
+            </li>
+            <li>
+              <span class="track-num">08.</span>Cherry Pie
+              <span class="track-note">What a smiley tune we have here. The suprising kick, which come from no where, is so groovy. Because we are close to the end, everything is more calm and compromiser. The "hangover" time is pleasant and enjoyable...all you need to do is let the music to control you.</span>
+            </li>
+          </ul>
+
+          <div class="artifact-body" style="margin-top:1.5rem">All in all, the "Corridor Of Mirrors" trip is a must experience for every psychedelic music's fan. The order of the tracks is decided smartly and make the all tour more fun and wonderful. The required comparison with the first album is unnecessary, becasue the times are different and each album has it's own magic above.
+Now, I can officialy say that Twisted Records back to control the business after an extended break and the credit should also go to Mr. Vaughn for his rare stuff.
+
+The cd is available through Twisted's web site:
+<a href="http://www.twistedrecords.co.uk/shop/catalog/product_info.php?products_id=117" target="_blank" rel="noopener">http://www.twistedrecords.co.uk/shop/catalog/product_info.php?products_id=117</a></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="museum-label">
+      <span class="label-accession">Accession No. GC-2007-001 &nbsp;·&nbsp; Music Reviews Wing</span>
+      <span class="label-condition">Condition: Complete — eight sub-inscriptions intact</span>
+    </div>
+  </article>
+
+  <!-- separator -->
+  <div class="artifact-sep" aria-hidden="true">
+    <div class="artifact-sep-mark"><span class="artifact-sep-icon">· · ·</span></div>
+  </div>
+
+  <!-- ════════════ FRAGMENT IV — DECOY ════════════ -->
+  <article class="artifact artifact--major" id="fragment-iv">
+    <div class="artifact-case">
+      <div class="artifact-number">Fragment IV &nbsp;·&nbsp; Circa 2007 CE &nbsp;·&nbsp; The Last Original Work</div>
+      <div class="artifact-inner">
+
+        <div class="artifact-cover">
+          <div class="album-cover-frame">
+            <img src="./images/decoy-push-button-pony.jpg"
+                 alt="Decoy — Push Button Pony album cover"
+                 class="album-cover" loading="lazy">
           </div>
           <p class="cover-caption">Decoy — Push Button Pony &nbsp;·&nbsp; Dance N Dust, 2007</p>
         </div>
@@ -495,12 +691,12 @@
                 <span class="meta-value">#1405872</span>
               </div>
               <div class="meta-item">
-                <span class="meta-label">Thread Views</span>
-                <span class="meta-value">26,246</span>
+                <span class="meta-label">Replies</span>
+                <span class="meta-value">13</span>
               </div>
               <div class="meta-item">
-                <span class="meta-label">Authored by</span>
-                <span class="meta-value">guy cohen — Thread Originator</span>
+                <span class="meta-label">Views</span>
+                <span class="meta-value">26,246</span>
               </div>
             </div>
           </header>
@@ -549,64 +745,13 @@ Decoy's debut album ("Not Responding to Light") was my first meeting with Dance 
 
           <div class="artifact-body" style="margin-top:1.5rem">Purchase artifact referenced:
 <a href="http://www.psyshop.com/shop/CDs/dnd/dnd1cd009.html" target="_blank" rel="noopener">http://www.psyshop.com/shop/CDs/dnd/dnd1cd009.html</a></div>
-        </div><!-- /artifact-content -->
-
-      </div>
-    </div>
-    <div class="museum-label">
-      <span class="label-accession">Accession No. GC-2007-001 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; The Major Work</span>
-      <span class="label-condition">Condition: Complete — nine sub-inscriptions intact</span>
-    </div>
-  </article>
-
-  <!-- ────────── FRAGMENT III ────────── -->
-  <article class="artifact" id="fragment-iii">
-    <div class="artifact-case">
-      <div class="artifact-number">Fragment III &nbsp;·&nbsp; Circa 2007 CE &nbsp;·&nbsp; Final Known Inscription</div>
-      <div class="artifact-inner">
-
-        <div class="artifact-cover">
-          <div class="album-cover-frame">
-            <img
-              src="./images/younger-brother-last-days.jpg"
-              alt="Younger Brother — The Last Days of Gravity album cover"
-              class="album-cover"
-              loading="lazy"
-            >
-          </div>
-          <p class="cover-caption">Younger Brother — The Last Days of Gravity &nbsp;·&nbsp; Twisted Records, 2007</p>
         </div>
 
-        <header class="artifact-header">
-          <h2 class="artifact-subject">On the Matter of Younger Brother — The Last Days of Gravity (Twisted)</h2>
-          <div class="artifact-meta">
-            <div class="meta-item">
-              <span class="meta-label">Date of Inscription</span>
-              <span class="meta-value">November 17, 2007 — 19:01</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Post Identifier</span>
-              <span class="meta-value">#1433305</span>
-            </div>
-          </div>
-        </header>
-
-        <div class="artifact-body">What a geniously production !
-This dou did an amazing job here and suprised us all despite the very high expetations.
-Respect.</div>
-
-        <p class="artifact-fragment-note">
-          The final inscription. Three lines written forty days after the Great Inscription.
-          The word <em>geniously</em> — neither <em>genius</em> nor <em>genial</em> in any known lexicon —
-          appears here as a hapax legomenon, coined once and abandoned to history.
-          After this, silence.
-        </p>
-
       </div>
     </div>
     <div class="museum-label">
-      <span class="label-accession">Accession No. GC-2007-002 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; Terminus</span>
-      <span class="label-condition">Condition: Complete — brevity intentional</span>
+      <span class="label-accession">Accession No. GC-2007-002 &nbsp;·&nbsp; Music Reviews Wing &nbsp;·&nbsp; The Last Original Work</span>
+      <span class="label-condition">Condition: Complete — nine sub-inscriptions intact</span>
     </div>
   </article>
 
@@ -615,7 +760,7 @@ Respect.</div>
 <!-- ══════════════ FOOTER ══════════════ -->
 <footer class="site-footer">
   <div class="hero-rule" style="margin-bottom:2rem"></div>
-  <p>These three fragments constitute the complete known writings of guy cohen<br>
+  <p>These four fragments constitute the complete known original writings of guy cohen<br>
   within the Music Reviews sector of forum.isratrance.com.</p>
   <p style="margin-top:1rem">Curator's note: Senior Member &nbsp;·&nbsp; 2,871 posts &nbsp;·&nbsp; 417 topics &nbsp;·&nbsp; user id unknown</p>
   <p style="margin-top:1rem; opacity:0.5">The archive was assembled from the ruins of a forum.<br>
@@ -631,8 +776,7 @@ Respect.</div>
     const size = Math.random() * 1.5 + 0.5;
     p.style.cssText = `
       left: ${Math.random() * 100}%;
-      width: ${size}px;
-      height: ${size}px;
+      width: ${size}px; height: ${size}px;
       animation-duration: ${12 + Math.random() * 20}s;
       animation-delay: ${-Math.random() * 20}s;
       opacity: 0;
